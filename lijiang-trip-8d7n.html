@@ -1,0 +1,4380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lijiang - Shangri-La - Deqin Trip - 8D7N</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700;800&family=Sarabun:wght@300;400;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Sarabun', 'Kanit', sans-serif;
+    background: #0f1923;
+    color: #e8e6e1;
+    overflow-x: hidden;
+  }
+
+  a { color: inherit; }
+
+  /* ── HERO SECTION ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 20px;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15,25,35,0.3) 0%, rgba(15,25,35,0.7) 50%, #0f1923 100%);
+  }
+
+  .hero > * { position: relative; z-index: 1; }
+
+  .hero-badge {
+    display: inline-block;
+    background: rgba(251, 191, 36, 0.15);
+    border: 1px solid rgba(251, 191, 36, 0.4);
+    color: #fbbf24;
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .hero h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: clamp(42px, 7vw, 88px);
+    font-weight: 800;
+    line-height: 1.1;
+    background: linear-gradient(135deg, #ffffff 0%, #93c5fd 40%, #fbbf24 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+  }
+
+  .hero h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: clamp(20px, 3vw, 32px);
+    font-weight: 300;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 12px;
+  }
+
+  .hero h3 {
+    font-family: 'Sarabun', sans-serif;
+    font-size: clamp(14px, 2vw, 18px);
+    font-weight: 300;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+  }
+
+  .hero-meta {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: rgba(255,255,255,0.8);
+  }
+
+  .hero-meta-item .icon { font-size: 22px; }
+
+  /* ── ROUTE OVERVIEW ── */
+  .route-bar {
+    background: rgba(255,255,255,0.03);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    padding: 28px 20px;
+    text-align: center;
+    overflow-x: auto;
+  }
+
+  .route-bar h4 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 16px;
+  }
+
+  .route-flow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .route-stop {
+    font-family: 'Kanit', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #93c5fd;
+    background: rgba(147,197,253,0.08);
+    border: 1px solid rgba(147,197,253,0.2);
+    padding: 6px 16px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .route-arrow {
+    color: rgba(255,255,255,0.25);
+    font-size: 16px;
+  }
+
+  /* ── PHOTO BANNER ── */
+  .photo-strip {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4px;
+    margin: 0;
+  }
+
+  .photo-strip img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.85);
+    transition: filter 0.3s, transform 0.4s;
+  }
+
+  .photo-strip img:hover {
+    filter: brightness(1);
+    transform: scale(1.03);
+  }
+
+  /* ── MAIN CONTENT ── */
+  .content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+
+  /* ── SECTION TITLE ── */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 60px 0 28px;
+  }
+
+  .section-header h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  .section-header .section-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.15), transparent);
+  }
+
+  /* ── DAY HEADER ── */
+  .day-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 60px 0 32px;
+  }
+
+  .day-header:first-child { margin-top: 0; }
+
+  .day-number {
+    font-family: 'Kanit', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #0f1923;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    padding: 8px 20px;
+    border-radius: 8px;
+    white-space: nowrap;
+  }
+
+  .day-title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .day-subtitle {
+    font-family: 'Sarabun', sans-serif;
+    font-size: 14px;
+    color: rgba(255,255,255,0.4);
+    margin-left: -8px;
+    white-space: nowrap;
+  }
+
+  .day-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(251,191,36,0.4), transparent);
+  }
+
+  /* ── HOTEL BAR ── */
+  .hotel-bar {
+    background: rgba(52,211,153,0.06);
+    border: 1px solid rgba(52,211,153,0.15);
+    border-radius: 12px;
+    padding: 14px 20px;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .hotel-bar .hotel-icon { font-size: 20px; }
+
+  .hotel-bar .hotel-name {
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #34d399;
+  }
+
+  .hotel-bar .hotel-zone {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+  }
+
+  /* ── TIMELINE ── */
+  .timeline {
+    position: relative;
+    padding-left: 40px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #40916c, rgba(64,145,108,0.2));
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 28px;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 18px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #40916c;
+    border: 3px solid #0f1923;
+    box-shadow: 0 0 0 2px #40916c;
+    z-index: 1;
+  }
+
+  .timeline-item.highlight::before {
+    background: #fbbf24;
+    box-shadow: 0 0 0 2px #fbbf24, 0 0 12px rgba(251,191,36,0.4);
+  }
+
+  .timeline-item.rest::before {
+    background: #818cf8;
+    box-shadow: 0 0 0 2px #818cf8, 0 0 12px rgba(129,140,248,0.4);
+  }
+
+  .timeline-item.danger::before {
+    background: #f87171;
+    box-shadow: 0 0 0 2px #f87171, 0 0 12px rgba(248,113,113,0.4);
+  }
+
+  .timeline-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 24px 28px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+
+  .timeline-card:hover {
+    background: rgba(255,255,255,0.07);
+    border-color: rgba(64,145,108,0.3);
+    transform: translateX(4px);
+  }
+
+  .timeline-item.highlight .timeline-card {
+    border-color: rgba(251,191,36,0.25);
+    background: rgba(251,191,36,0.04);
+  }
+
+  .timeline-item.highlight .timeline-card:hover {
+    border-color: rgba(251,191,36,0.4);
+  }
+
+  .timeline-item.rest .timeline-card {
+    border-color: rgba(129,140,248,0.25);
+    background: rgba(129,140,248,0.04);
+  }
+
+  .timeline-item.danger .timeline-card {
+    border-color: rgba(248,113,113,0.25);
+    background: rgba(248,113,113,0.04);
+  }
+
+  .timeline-item.danger .timeline-card:hover {
+    border-color: rgba(248,113,113,0.4);
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+
+  .card-time {
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #40916c;
+    background: rgba(64,145,108,0.12);
+    padding: 4px 14px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+
+  .timeline-item.highlight .card-time {
+    color: #fbbf24;
+    background: rgba(251,191,36,0.12);
+  }
+
+  .timeline-item.rest .card-time {
+    color: #818cf8;
+    background: rgba(129,140,248,0.12);
+  }
+
+  .timeline-item.danger .card-time {
+    color: #f87171;
+    background: rgba(248,113,113,0.12);
+  }
+
+  .card-emoji { font-size: 24px; }
+
+  .card-title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .card-desc {
+    color: rgba(255,255,255,0.6);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-top: 4px;
+  }
+
+  .card-desc strong { color: rgba(255,255,255,0.85); }
+
+  .card-desc a {
+    color: #60a5fa;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(96,165,250,0.4);
+    transition: border-color 0.2s;
+  }
+
+  .card-desc a:hover { border-bottom-color: #60a5fa; }
+
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid;
+  }
+
+  .tag-food { color: #fb923c; border-color: rgba(251,146,60,0.3); background: rgba(251,146,60,0.08); }
+  .tag-place { color: #60a5fa; border-color: rgba(96,165,250,0.3); background: rgba(96,165,250,0.08); }
+  .tag-activity { color: #a78bfa; border-color: rgba(167,139,250,0.3); background: rgba(167,139,250,0.08); }
+  .tag-stay { color: #34d399; border-color: rgba(52,211,153,0.3); background: rgba(52,211,153,0.08); }
+  .tag-shop { color: #f472b6; border-color: rgba(244,114,182,0.3); background: rgba(244,114,182,0.08); }
+  .tag-drive { color: #94a3b8; border-color: rgba(148,163,184,0.3); background: rgba(148,163,184,0.08); }
+  .tag-rest { color: #818cf8; border-color: rgba(129,140,248,0.3); background: rgba(129,140,248,0.08); }
+  .tag-warn { color: #f87171; border-color: rgba(248,113,113,0.3); background: rgba(248,113,113,0.08); }
+  .tag-flight { color: #38bdf8; border-color: rgba(56,189,248,0.3); background: rgba(56,189,248,0.08); }
+  .tag-photo { color: #fb7185; border-color: rgba(251,113,133,0.3); background: rgba(251,113,133,0.08); }
+  .tag-luxury { color: #c084fc; border-color: rgba(192,132,252,0.3); background: rgba(192,132,252,0.08); }
+
+  /* ── LINK BUTTON ── */
+  .map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #60a5fa;
+    background: rgba(96,165,250,0.08);
+    border: 1px solid rgba(96,165,250,0.2);
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .map-link:hover {
+    background: rgba(96,165,250,0.15);
+    border-color: rgba(96,165,250,0.4);
+    transform: translateY(-1px);
+  }
+
+  .map-link-baidu {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    margin-left: 8px;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #f87171;
+    background: rgba(248,113,113,0.08);
+    border: 1px solid rgba(248,113,113,0.2);
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .map-link-baidu:hover {
+    background: rgba(248,113,113,0.15);
+    border-color: rgba(248,113,113,0.4);
+    transform: translateY(-1px);
+  }
+
+  .map-link-amap {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    margin-left: 8px;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #34d399;
+    background: rgba(52,211,153,0.08);
+    border: 1px solid rgba(52,211,153,0.2);
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .map-link-amap:hover {
+    background: rgba(52,211,153,0.15);
+    border-color: rgba(52,211,153,0.4);
+    transform: translateY(-1px);
+  }
+
+  /* ── RESTAURANT SUGGESTION BOX ── */
+  .restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    margin-top: 14px;
+  }
+
+  .resto-card {
+    background: rgba(251,146,60,0.06);
+    border: 1px solid rgba(251,146,60,0.15);
+    border-radius: 12px;
+    padding: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+  }
+
+  .resto-card:hover {
+    background: rgba(251,146,60,0.12);
+    border-color: rgba(251,146,60,0.3);
+    transform: translateY(-2px);
+  }
+
+  .resto-name {
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fb923c;
+    margin-bottom: 4px;
+  }
+
+  .resto-detail {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.5;
+  }
+
+  /* ── PHOTO CARD (inline) ── */
+  .card-photo {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 14px;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  /* ── WEATHER / CLOTHING SECTION ── */
+  .weather-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .weather-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 22px;
+    transition: all 0.3s;
+  }
+
+  .weather-card:hover {
+    background: rgba(255,255,255,0.06);
+    transform: translateY(-2px);
+  }
+
+  .weather-card .zone-name {
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #93c5fd;
+    margin-bottom: 4px;
+  }
+
+  .weather-card .zone-alt {
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 10px;
+  }
+
+  .weather-card .zone-temp {
+    font-size: 14px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .weather-card .zone-temp strong { color: #fbbf24; }
+
+  .weather-card .zone-clothes {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.7;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 10px;
+  }
+
+  /* ── TIPS SECTION ── */
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 14px;
+    margin-top: 16px;
+  }
+
+  .tip-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    gap: 14px;
+    transition: all 0.3s;
+  }
+
+  .tip-card:hover {
+    background: rgba(255,255,255,0.06);
+    transform: translateY(-2px);
+  }
+
+  .tip-num {
+    font-family: 'Kanit', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(251,191,36,0.25);
+    flex-shrink: 0;
+    width: 36px;
+    text-align: center;
+    line-height: 1;
+    padding-top: 2px;
+  }
+
+  .tip-content { flex: 1; }
+
+  .tip-title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fbbf24;
+    margin-bottom: 4px;
+  }
+
+  .tip-text {
+    font-size: 14px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.6;
+  }
+
+  /* ── BUDGET TABLE ── */
+  .budget-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+  }
+
+  .budget-table th {
+    font-family: 'Kanit', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .budget-table td {
+    padding: 12px 16px;
+    font-size: 15px;
+    color: rgba(255,255,255,0.65);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .budget-table tr:hover td {
+    background: rgba(255,255,255,0.02);
+  }
+
+  .budget-table .price {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    color: #fbbf24;
+  }
+
+  /* ── HOTEL SUMMARY TABLE ── */
+  .hotel-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+  }
+
+  .hotel-table th {
+    font-family: 'Kanit', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .hotel-table td {
+    padding: 12px 16px;
+    font-size: 15px;
+    color: rgba(255,255,255,0.65);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .hotel-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+  .hotel-table .hotel-highlight {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    color: #34d399;
+  }
+
+  /* ── PACKING / SHOPPING LIST ── */
+  .lists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .list-box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 28px;
+  }
+
+  .list-box h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .list-box ul { list-style: none; padding: 0; }
+
+  .list-box li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    color: rgba(255,255,255,0.7);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .list-box li:last-child { border-bottom: none; }
+
+  .list-box li::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid rgba(255,255,255,0.25);
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  /* ── KEY PLACES ── */
+  .map-section { margin: 50px 0 20px; }
+
+  .map-section h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .places-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+  }
+
+  .place-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+  }
+
+  .place-card:hover {
+    background: rgba(255,255,255,0.07);
+    transform: translateY(-2px);
+    border-color: rgba(96,165,250,0.3);
+  }
+
+  .place-card .place-icon { font-size: 32px; margin-bottom: 8px; }
+  .place-card .place-name {
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  .place-card .place-detail {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 8px;
+  }
+  .place-card .place-link-hint {
+    font-size: 11px;
+    color: #60a5fa;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .place-card:hover .place-link-hint { opacity: 1; }
+
+  .place-links {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .place-links .map-link,
+  .place-links .map-link-baidu,
+  .place-links .map-link-amap {
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    text-align: center;
+    padding: 40px 20px 60px;
+    color: rgba(255,255,255,0.3);
+    font-size: 13px;
+  }
+
+  .footer .vibe {
+    font-family: 'Kanit', sans-serif;
+    font-size: 24px;
+    color: rgba(255,255,255,0.15);
+    margin-bottom: 10px;
+    letter-spacing: 6px;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .photo-strip { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (max-width: 600px) {
+    .hero-meta { gap: 16px; }
+    .photo-strip { grid-template-columns: repeat(2, 1fr); }
+    .photo-strip img { aspect-ratio: 4/3; }
+    .card-photo { aspect-ratio: 16/10; }
+    .timeline { padding-left: 32px; }
+    .timeline-card { padding: 18px 20px; }
+    .day-header { flex-wrap: wrap; }
+    .lists-grid { grid-template-columns: 1fr; }
+    .restaurant-grid { grid-template-columns: 1fr; }
+    .route-flow { gap: 6px; }
+    .route-stop { font-size: 12px; padding: 4px 12px; }
+    .weather-grid { grid-template-columns: 1fr; }
+    .tips-grid { grid-template-columns: 1fr; }
+    .places-grid { grid-template-columns: repeat(2, 1fr); }
+    .map-link, .map-link-baidu, .map-link-amap { font-size: 12px; padding: 5px 12px; }
+  }
+
+  /* ── LIGHTBOX ── */
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 40px;
+  }
+
+  .lightbox-overlay.active {
+    display: flex;
+    animation: fadeIn 0.25s ease;
+  }
+
+  .lightbox-overlay img {
+    max-width: 95vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    animation: zoomIn 0.3s ease;
+  }
+
+  .lightbox-close {
+    position: fixed;
+    top: 20px;
+    right: 28px;
+    font-size: 36px;
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+    z-index: 10000;
+    transition: color 0.2s;
+    font-family: sans-serif;
+    line-height: 1;
+  }
+
+  .lightbox-close:hover { color: #fff; }
+
+  .lightbox-caption {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    font-family: 'Kanit', sans-serif;
+    background: rgba(0,0,0,0.5);
+    padding: 8px 24px;
+    border-radius: 30px;
+    white-space: nowrap;
+    z-index: 10000;
+  }
+
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes zoomIn { from { transform: scale(0.85); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+  /* clickable images */
+  .photo-strip img,
+  .card-photo {
+    cursor: zoom-in;
+  }
+
+  /* ── GEAR BOX (Today's Gear per day) ── */
+  .gear-box {
+    background: rgba(147,197,253,0.06);
+    border: 1px solid rgba(147,197,253,0.15);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+  }
+
+  .gear-box h4 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #93c5fd;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .gear-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 8px;
+  }
+
+  .gear-item {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.5;
+  }
+
+  .gear-item strong {
+    color: #93c5fd;
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  /* ── PREP SECTION ── */
+  .prep-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .prep-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 22px;
+  }
+
+  .prep-card h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .prep-card p, .prep-card li {
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .prep-card ul, .prep-card ol { padding-left: 18px; }
+
+  .prep-card strong { color: rgba(255,255,255,0.85); }
+
+  .prep-card.status-ok { border-color: rgba(52,211,153,0.25); }
+  .prep-card.status-ok h3 { color: #34d399; }
+
+  .prep-card.status-action { border-color: rgba(251,191,36,0.25); }
+  .prep-card.status-action h3 { color: #fbbf24; }
+
+  .prep-card.status-warn { border-color: rgba(248,113,113,0.25); }
+  .prep-card.status-warn h3 { color: #f87171; }
+
+  .prep-card.status-info { border-color: rgba(96,165,250,0.25); }
+  .prep-card.status-info h3 { color: #60a5fa; }
+
+  /* ── PHRASE TABLE ── */
+  .phrase-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+  }
+
+  .phrase-table th {
+    font-family: 'Kanit', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .phrase-table td {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.65);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .phrase-table .chinese {
+    font-size: 18px;
+    color: #fbbf24;
+  }
+
+  .phrase-table .pinyin {
+    color: #93c5fd;
+    font-style: italic;
+  }
+
+  .phrase-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+  /* ── EMERGENCY CARD ── */
+  .emergency-card {
+    background: rgba(248,113,113,0.06);
+    border: 2px solid rgba(248,113,113,0.25);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-top: 24px;
+  }
+
+  .emergency-card h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f87171;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .emergency-card .e-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 8px;
+  }
+
+  .emergency-card .e-item {
+    font-size: 15px;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .emergency-card .e-item strong {
+    color: #f87171;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  /* ── APP SETUP CARD ── */
+  .app-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 14px;
+  }
+
+  .app-card h4 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #60a5fa;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .app-card ol, .app-card ul {
+    padding-left: 18px;
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .app-card p {
+    color: rgba(255,255,255,0.55);
+    font-size: 13px;
+    margin-top: 6px;
+  }
+
+  .app-card strong { color: rgba(255,255,255,0.85); }
+
+  /* ── STATS GRID ── */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 14px;
+    margin-top: 16px;
+  }
+
+  .stat-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .stat-card .stat-icon { font-size: 28px; margin-bottom: 6px; }
+
+  .stat-card .stat-value {
+    font-family: 'Kanit', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fbbf24;
+  }
+
+  .stat-card .stat-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  /* ── QUICK REF TABLE ── */
+  .quick-ref-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 13px;
+  }
+
+  .quick-ref-table th {
+    font-family: 'Kanit', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    text-align: left;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .quick-ref-table td {
+    padding: 10px 10px;
+    color: rgba(255,255,255,0.6);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .quick-ref-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+  /* ── ALTITUDE TABLE ── */
+  .altitude-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+  }
+
+  .altitude-table th {
+    font-family: 'Kanit', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .altitude-table td {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .altitude-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+  .risk-low { color: #34d399; }
+  .risk-moderate { color: #fbbf24; }
+  .risk-high { color: #f87171; font-weight: 600; }
+
+  /* ── NIGHT PREP BOX ── */
+  .night-prep {
+    background: rgba(129,140,248,0.06);
+    border: 1px solid rgba(129,140,248,0.15);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 16px;
+  }
+
+  .night-prep h4 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #818cf8;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+
+  .night-prep ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .night-prep li {
+    padding: 4px 0;
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+  }
+
+  /* ── NEW TAG TYPES ── */
+  .tag-health { color: #4ade80; border-color: rgba(74,222,128,0.3); background: rgba(74,222,128,0.08); }
+  .tag-gear { color: #93c5fd; border-color: rgba(147,197,253,0.3); background: rgba(147,197,253,0.08); }
+  .tag-app { color: #38bdf8; border-color: rgba(56,189,248,0.3); background: rgba(56,189,248,0.08); }
+  .tag-money { color: #fcd34d; border-color: rgba(252,211,77,0.3); background: rgba(252,211,77,0.08); }
+
+  /* ── RESPONSIVE ADDITIONS ── */
+  @media (max-width: 600px) {
+    .prep-grid { grid-template-columns: 1fr; }
+    .gear-row { grid-template-columns: 1fr 1fr; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .quick-ref-table { font-size: 11px; }
+    .quick-ref-table th, .quick-ref-table td { padding: 8px 6px; }
+    .phrase-table td, .phrase-table th { padding: 6px 8px; }
+    .phrase-table .chinese { font-size: 16px; }
+    .emergency-card { padding: 18px 20px; }
+    .emergency-card .e-row { gap: 12px; }
+  }
+
+  @media print {
+    body { background: #fff; color: #222; }
+    .hero { min-height: auto; padding: 40px 20px; }
+    .hero h1 { -webkit-text-fill-color: #222; }
+    .timeline-card { border: 1px solid #ddd; }
+    .photo-strip { display: none; }
+    .lightbox-overlay { display: none !important; }
+    .collapse-toggle { display: none !important; }
+    .collapsible-content { max-height: none !important; overflow: visible !important; }
+  }
+
+  /* ── COLLAPSE / EXPAND ACCORDION ── */
+  .section-header,
+  .day-header {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .section-header:hover,
+  .day-header:hover {
+    opacity: 0.85;
+  }
+
+  .collapse-chevron {
+    color: #fbbf24;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+  }
+
+  .collapse-chevron.collapsed {
+    transform: rotate(0deg);
+  }
+
+  .collapsible-content {
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    opacity: 1;
+  }
+
+  .collapsible-content.collapsed {
+    max-height: 0 !important;
+    opacity: 0;
+    margin-bottom: 0;
+  }
+
+  .section-header.collapsed-header,
+  .day-header.collapsed-header {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  /* ── CLICK-ME HINT ── */
+  .click-hint {
+    font-size: 12px;
+    color: rgba(251,191,36,0.6);
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: auto;
+    flex-shrink: 0;
+    transition: opacity 0.3s;
+  }
+  .section-header:hover .click-hint,
+  .day-header:hover .click-hint {
+    color: rgba(251,191,36,0.9);
+  }
+
+  /* ── COLLAPSE ALL / EXPAND ALL BUTTON ── */
+  .collapse-toggle {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+    background: rgba(15,25,35,0.85);
+    border: 1px solid rgba(251,191,36,0.3);
+    color: #fbbf24;
+    font-family: 'Kanit', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.2s ease;
+    letter-spacing: 0.5px;
+  }
+
+  .collapse-toggle:hover {
+    background: rgba(15,25,35,0.95);
+    border-color: rgba(251,191,36,0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(251,191,36,0.15);
+  }
+
+  /* ── OUTFIT VISUAL (Clothing Illustrations) ── */
+  .outfit-visual {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .outfit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 10px 14px;
+    min-width: 80px;
+    text-align: center;
+  }
+
+  .outfit-emoji {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+
+  .outfit-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.3;
+  }
+
+  .outfit-item.warning {
+    border-color: rgba(22,163,74,0.4);
+    background: rgba(22,163,74,0.08);
+  }
+
+  .outfit-item.warning .outfit-label {
+    color: #16a34a;
+    font-weight: 600;
+  }
+
+  .outfit-item.highlight-item {
+    border-color: rgba(251,191,36,0.3);
+    background: rgba(251,191,36,0.06);
+  }
+
+  .outfit-item.highlight-item .outfit-label {
+    color: #fbbf24;
+  }
+
+  .outfit-time-label {
+    font-family: 'Kanit', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.5);
+    margin-top: 12px;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+
+  .outfit-time-label:first-of-type {
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+
+  @media (max-width: 600px) {
+    .outfit-item {
+      min-width: 70px;
+      padding: 8px 10px;
+    }
+    .outfit-emoji { font-size: 24px; }
+    .outfit-label { font-size: 10px; }
+    .collapse-toggle {
+      bottom: 16px;
+      right: 16px;
+      font-size: 12px;
+      padding: 8px 14px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- HERO                                        -->
+<!-- ════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg"><img src="https://images.unsplash.com/photo-1677922069750-944be2b9ad20?w=1600&q=80" alt="Lijiang Black Dragon Pool" /></div>
+  <div class="hero-badge">Yunnan Adventure</div>
+  <h1>Lijiang &middot; Shangri-La &middot; Deqin</h1>
+  <h2>8 Days 7 Nights - Trip Planner</h2>
+  <h3>Snow Mountains &bull; Tibetan Culture &bull; Glacier Adventures</h3>
+  <div class="hero-meta">
+    <div class="hero-meta-item"><span class="icon">&#x1F4C5;</span> Feb 28 - Mar 7, 2026</div>
+    <div class="hero-meta-item"><span class="icon">&#x2708;&#xFE0F;</span> Ruili Airlines (BKK-LJG Direct)</div>
+    <div class="hero-meta-item"><span class="icon">&#x26F0;&#xFE0F;</span> Up to 4,506m Altitude</div>
+    <div class="hero-meta-item"><span class="icon">&#x1F3D4;&#xFE0F;</span> Jade Dragon &bull; Meili &bull; Baima</div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- PHOTO STRIP                                 -->
+<!-- ════════════════════════════════════════════ -->
+<div class="photo-strip">
+  <img src="https://images.unsplash.com/photo-1759627025419-f34a73ecbd0c?w=600&q=75" alt="Lijiang Old Town" />
+  <img src="https://images.unsplash.com/photo-1677922069611-3019fcb0f696?w=600&q=75" alt="Jade Dragon Snow Mountain" />
+  <img src="https://images.unsplash.com/photo-1634647164450-cf5bc8a983bb?w=600&q=75" alt="Tiger Leaping Gorge" />
+  <img src="https://images.unsplash.com/photo-1759626507894-68a2c5cbc20a?w=600&q=75" alt="Songzanlin Monastery" />
+  <img src="https://images.unsplash.com/photo-1669967420852-85c16aa2f92f?w=600&q=75" alt="Meili Snow Mountain Sunrise" />
+  <img src="https://images.unsplash.com/photo-1672734435552-c3b3187f84eb?w=600&q=75" alt="Potatso National Park" />
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- ITINERARY                                   -->
+<!-- ════════════════════════════════════════════ -->
+<div class="content">
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- DAY-BY-DAY QUICK REFERENCE                 -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header">
+    <h2>&#x1F4C5; Day-by-Day Quick Reference</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div style="overflow-x: auto;">
+    <table class="quick-ref-table">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Date</th>
+          <th>Wake</th>
+          <th>Key Activity</th>
+          <th>Hotel</th>
+          <th>Wear</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1</strong></td>
+          <td>Feb 28</td>
+          <td>&mdash;</td>
+          <td>Arrive Lijiang 17:40</td>
+          <td style="color:#34d399;">Nayun</td>
+          <td>Light jacket</td>
+        </tr>
+        <tr>
+          <td><strong>2</strong></td>
+          <td>Mar 1</td>
+          <td style="color:#f87171;">07:15</td>
+          <td>&#x1F3D4;&#xFE0F; Jade Dragon 4,506m</td>
+          <td style="color:#34d399;">Nayun</td>
+          <td style="color:#f87171;">Full winter gear</td>
+        </tr>
+        <tr>
+          <td><strong>3</strong></td>
+          <td>Mar 2</td>
+          <td>08:00</td>
+          <td>&#x1F30A; Tiger Leaping Gorge &#x2192; Shangri-La</td>
+          <td style="color:#34d399;">Bandu</td>
+          <td>Layers (cold transition)</td>
+        </tr>
+        <tr>
+          <td><strong>4</strong></td>
+          <td>Mar 3</td>
+          <td>08:30</td>
+          <td>&#x1F332; Pudacuo Park + &#x1F40E; Napa Lake</td>
+          <td style="color:#34d399;">Bandu</td>
+          <td>Windproof + layers</td>
+        </tr>
+        <tr>
+          <td><strong>5</strong></td>
+          <td>Mar 4</td>
+          <td>08:30</td>
+          <td>&#x1F3DB;&#xFE0F; Songzanlin + &#x1F699; Road Trip to Deqin</td>
+          <td style="color:#34d399;">Guanjing</td>
+          <td style="color:#f87171;">Full winter gear</td>
+        </tr>
+        <tr>
+          <td><strong>6</strong></td>
+          <td>Mar 5</td>
+          <td style="color:#f87171;">06:30</td>
+          <td>&#x2B50; GOLDEN SUNRISE + LUX* Benzilan</td>
+          <td style="color:#c084fc;">LUX*</td>
+          <td>Warmest &#x2192; shed layers</td>
+        </tr>
+        <tr>
+          <td><strong>7</strong></td>
+          <td>Mar 6</td>
+          <td>09:00</td>
+          <td>&#x1F699; Drive to Lijiang + &#x1F6CD;&#xFE0F; Old Town Chill</td>
+          <td style="color:#c084fc;">Wyndham</td>
+          <td>Street fashion / casual</td>
+        </tr>
+        <tr>
+          <td><strong>8</strong></td>
+          <td>Mar 7</td>
+          <td>08:30</td>
+          <td>&#x2708;&#xFE0F; Fly home 13:00</td>
+          <td>&mdash;</td>
+          <td>Comfortable</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- DAY 1                                      -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="day-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <span class="day-number">Day 1</span>
+    <span class="day-title">Arrival in Lijiang</span>
+    <span class="day-subtitle">Sat, Feb 28</span>
+    <span class="day-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="hotel-bar">
+    <span class="hotel-icon">&#x1F3E8;</span>
+    <span class="hotel-name">Nayun Natural Aesthetic</span>
+    <span class="hotel-zone">Lijiang Old Town East Gate &mdash; Shuttle to door</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=Nayun+Natural+Aesthetic+Hotel+Lijiang" target="_blank" rel="noopener" class="map-link" style="margin-left:auto;font-size:12px;">&#x1F4CD; Hotel Map</a>
+    <a href="https://uri.amap.com/search?keyword=%E7%BA%B3%E4%BA%91%E8%87%AA%E7%84%B6%E7%BE%8E%E5%AD%A6%E9%85%92%E5%BA%97%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap" style="font-size:12px;">&#x1F5FA; Amap</a>
+  </div>
+
+  <div class="gear-box">
+    <h4>&#x1F9E5; Today's Gear</h4>
+    <div class="gear-row">
+      <div class="gear-item"><strong>Temperature</strong>5-10&#xB0;C evening</div>
+      <div class="gear-item"><strong>Altitude</strong>2,400m (arrival)</div>
+      <div class="gear-item"><strong>Wear</strong>Long pants, long-sleeve shirt, light down jacket</div>
+      <div class="gear-item"><strong>Day Bag</strong>Passport, phone, power bank, cash</div>
+      <div class="gear-item"><strong>Tonight</strong>&#x26A0;&#xFE0F; NO shower! Lay out FULL mountain gear for tomorrow. Set alarm 07:15</div>
+    </div>
+    <div class="outfit-visual">
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F9E5;</span><span class="outfit-label">Light Down Jacket</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F455;</span><span class="outfit-label">Long-sleeve Shirt</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F456;</span><span class="outfit-label">Long Pants</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F45F;</span><span class="outfit-label">Sneakers</span></div>
+    </div>
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">19:25</span>
+          <span class="card-emoji">&#x2708;&#xFE0F;</span>
+          <span class="card-title">Land at Lijiang Airport (LJG)</span>
+        </div>
+        <div class="card-desc">
+          Direct flight via <strong>Ruili Airlines</strong> from Bangkok. Welcome to Yunnan! Altitude here is <strong>2,400m</strong> &mdash; take it easy from the start. Collect luggage and head to hotel shuttle.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Lijiang+Sanyi+International+Airport" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Airport Map</a>
+        <a href="https://uri.amap.com/search?keyword=%E4%B8%BD%E6%B1%9F%E4%B8%89%E4%B9%89%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <div class="card-tags">
+          <span class="tag tag-flight">Direct Flight</span>
+          <span class="tag tag-place">Lijiang Airport</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">20:45</span>
+          <span class="card-emoji">&#x1F3E8;</span>
+          <span class="card-title">Check-in Hotel + Find Dinner</span>
+        </div>
+        <div class="card-desc">
+          Check-in at <strong>Nayun Natural Aesthetic</strong> near Lijiang Old Town East Gate. Hotel has shuttle service right to the door. Drop bags, then head out for a simple dinner nearby.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Nayun+Natural+Aesthetic+Hotel+Lijiang" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Hotel Map</a>
+        <a href="https://uri.amap.com/search?keyword=%E7%BA%B3%E4%BA%91%E8%87%AA%E7%84%B6%E7%BE%8E%E5%AD%A6%E9%85%92%E5%BA%97%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <div class="card-tags">
+          <span class="tag tag-stay">Check-in</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">21:00</span>
+          <span class="card-emoji">&#x1F35C;</span>
+          <span class="card-title">Dinner - Crossing the Bridge Noodles</span>
+        </div>
+        <div class="card-desc">
+          Keep it simple on arrival night. Try <strong>Crossing the Bridge Noodles</strong> (&#x8FC7;&#x6865;&#x7C73;&#x7EBF;) &mdash; Yunnan's most famous dish! A rich chicken broth with fresh ingredients you add yourself. Light, warm, and perfect for altitude adjustment.
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-food">Yunnan Noodles</span>
+          <span class="tag tag-food">Light Dinner</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item danger">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">22:00</span>
+          <span class="card-emoji">&#x26A0;&#xFE0F;</span>
+          <span class="card-title">Sleep Early - Altitude Adjustment</span>
+        </div>
+        <div class="card-desc">
+          <strong>IMPORTANT:</strong> DO NOT shower or wash hair tonight (local belief to help prevent altitude sickness). If you absolutely must shower, keep it very quick with warm water. Drink plenty of warm water. <strong>No alcohol.</strong> No running or heavy activity. Tomorrow is the big mountain day!
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-warn">No Shower Advised</span>
+          <span class="tag tag-warn">No Alcohol</span>
+          <span class="tag tag-rest">Rest Well</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div><!-- /collapsible: Day 1 -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- DAY 2                                      -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="day-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <span class="day-number">Day 2</span>
+    <span class="day-title">Jade Dragon Snow Mountain</span>
+    <span class="day-subtitle">Sun, Mar 1</span>
+    <span class="day-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="hotel-bar">
+    <span class="hotel-icon">&#x1F3E8;</span>
+    <span class="hotel-name">Nayun Natural Aesthetic</span>
+    <span class="hotel-zone">Lijiang Old Town East Gate (same hotel)</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=Nayun+Natural+Aesthetic+Hotel+Lijiang" target="_blank" rel="noopener" class="map-link" style="margin-left:auto;font-size:12px;">&#x1F4CD; Hotel Map</a>
+    <a href="https://uri.amap.com/search?keyword=%E7%BA%B3%E4%BA%91%E8%87%AA%E7%84%B6%E7%BE%8E%E5%AD%A6%E9%85%92%E5%BA%97%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap" style="font-size:12px;">&#x1F5FA; Amap</a>
+  </div>
+
+  <div class="gear-box">
+    <h4>&#x1F3D4;&#xFE0F; Today's Gear &mdash; Mountain Day!</h4>
+    <div class="gear-row">
+      <div class="gear-item"><strong>Temperature</strong>-10 to -5&#xB0;C at summit, 10-15&#xB0;C in town</div>
+      <div class="gear-item"><strong>Altitude</strong>&#x26A0;&#xFE0F; 4,506m (highest point!)</div>
+      <div class="gear-item"><strong>Wear</strong>Thermal base + fleece mid + heavy down jacket + waterproof shell. Warm pants (NOT jeans!). Insulated gloves, beanie, scarf. Snow boots.</div>
+      <div class="gear-item"><strong>Day Bag</strong>Oxygen cans (2-3), chocolate/energy bars, water, power bank (keep warm!), sunscreen SPF50+, sunglasses (snow glare!)</div>
+      <div class="gear-item"><strong>Tonight</strong>Pack suitcase &mdash; switching hotels tomorrow. Put motion sickness pills in day bag.</div>
+    </div>
+    <div class="outfit-visual">
+      <div class="outfit-item warning"><span class="outfit-emoji">&#x1F9E5;</span><span class="outfit-label">Heavy Down Jacket</span></div>
+      <div class="outfit-item warning"><span class="outfit-emoji">&#x1F9E4;</span><span class="outfit-label">Insulated Gloves</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F9E3;</span><span class="outfit-label">Scarf</span></div>
+      <div class="outfit-item warning"><span class="outfit-emoji">&#x1F3BF;</span><span class="outfit-label">Snow Boots</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F9E2;</span><span class="outfit-label">Warm Beanie</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F576;&#xFE0F;</span><span class="outfit-label">Sunglasses</span></div>
+      <div class="outfit-item warning"><span class="outfit-emoji">&#x1F456;</span><span class="outfit-label">Warm Pants (NOT jeans!)</span></div>
+    </div>
+    <div class="outfit-time-label">&#x1F9F5; Inner Layers</div>
+    <div class="outfit-visual">
+      <div class="outfit-item"><span class="outfit-emoji">&#x1FA73;</span><span class="outfit-label">Thermal Base Layer</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F9E5;</span><span class="outfit-label">Fleece Mid-layer</span></div>
+    </div>
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline-item danger">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">07:45</span>
+          <span class="card-emoji">&#x1F690;</span>
+          <span class="card-title">Van Picks Up at Hotel</span>
+        </div>
+        <div class="card-desc">
+          <strong>DON'T BE LATE!</strong> Need to queue early for the cable car. The van departs sharp at 07:45. Eat a light breakfast before, bring chocolate bars and energy snacks for the mountain. Wear your <strong>heaviest winter gear</strong> &mdash; it's -10&#xB0;C at the summit.
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-warn">Don't Be Late!</span>
+          <span class="tag tag-drive">Van Transfer</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">09:00</span>
+          <span class="card-emoji">&#x1F3D4;&#xFE0F;</span>
+          <span class="card-title">Big Cable Car - Glacier Park</span>
+        </div>
+        <div class="card-desc">
+          The <strong>Big Cable Car</strong> takes you from 3,356m up to <strong>4,506m in just 15 minutes!</strong> This is the highest point of the entire trip. Your ears will pop. Take canned oxygen if you feel dizzy. The views from the cable car are absolutely breathtaking.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Jade+Dragon+Snow+Mountain+Glacier+Park" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E7%8E%89%E9%BE%99%E9%9B%AA%E5%B1%B1%E5%86%B0%E5%B7%9D%E5%85%AC%E5%9B%AD" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <a href="https://map.baidu.com/search/?querytype=s&wd=%E7%8E%89%E9%BE%99%E9%9B%AA%E5%B1%B1%E5%86%B0%E5%B7%9D%E5%85%AC%E5%9B%AD" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
+        <div class="card-tags">
+          <span class="tag tag-activity">Cable Car</span>
+          <span class="tag tag-place">4,506m Summit</span>
+          <span class="tag tag-warn">Bring Oxygen</span>
+        </div>
+        <img class="card-photo" src="https://images.unsplash.com/photo-1603850637310-141f4011d677?w=800&q=75" alt="Jade Dragon Snow Mountain" />
+      </div>
+    </div>
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">10:00</span>
+          <span class="card-emoji">&#x2744;&#xFE0F;</span>
+          <span class="card-title">Walk on the Summit</span>
+        </div>
+        <div class="card-desc">
+          Walk up the wooden stairs at the top. Take photos, play in the snow, enjoy the panoramic views. <strong>WALK SLOWLY. NO RUNNING.</strong> Breathe deeply and steadily. If you feel headache or nausea, use canned oxygen and sit down. Don't push yourself &mdash; this is 4,506m!
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-photo">Epic Photo Spot</span>
+          <span class="tag tag-warn">Walk Slowly!</span>
+          <span class="tag tag-activity">Snow Play</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">12:30</span>
+          <span class="card-emoji">&#x1F36B;</span>
+          <span class="card-title">Descend + Lunch</span>
+        </div>
+        <div class="card-desc">
+          Head back down via cable car. Grab lunch at the visitor center area. This is a good time to eat your chocolate bars and energy snacks too. Rest and warm up before the next stop.
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-food">Lunch</span>
+          <span class="tag tag-rest">Recover</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">13:30</span>
+          <span class="card-emoji">&#x1F4A7;</span>
+          <span class="card-title">Blue Moon Valley (Baishui River)</span>
+        </div>
+        <div class="card-desc">
+          Absolutely <strong>stunning turquoise blue water</strong> against the backdrop of Jade Dragon Snow Mountain. The color comes from mineral deposits in the glacial meltwater. One of the most photographed spots in Yunnan. Take your time here &mdash; it's magical.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Blue+Moon+Valley+Lijiang" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E8%93%9D%E6%9C%88%E8%B0%B7%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <a href="https://map.baidu.com/search/?querytype=s&wd=%E8%93%9D%E6%9C%88%E8%B0%B7+%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
+        <div class="card-tags">
+          <span class="tag tag-place">Must-See</span>
+          <span class="tag tag-photo">Stunning Photos</span>
+        </div>
+        <img class="card-photo" src="https://images.unsplash.com/photo-1677922069769-0164b29e2c1a?w=800&q=75" alt="Blue Moon Valley turquoise water" />
+      </div>
+    </div>
+
+    <div class="timeline-item rest">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">16:45</span>
+          <span class="card-emoji">&#x1F6CC;</span>
+          <span class="card-title">Back to Hotel - Rest / Nap</span>
+        </div>
+        <div class="card-desc">
+          Return to hotel and take a <strong>1-hour rest</strong>. The mountain day is physically demanding at altitude. Your body needs recovery time. Nap, drink warm water, relax.
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-rest">Power Nap</span>
+          <span class="tag tag-stay">Nayun Hotel</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">18:00</span>
+          <span class="card-emoji">&#x1F303;</span>
+          <span class="card-title">Black Dragon Pool + Old Town Walk</span>
+        </div>
+        <div class="card-desc">
+          Take a <strong>Didi</strong> to <strong>Black Dragon Pool</strong> &mdash; the iconic viewpoint with Jade Dragon Snow Mountain reflected in the water. Then walk back through <strong>Lijiang Old Town</strong>, browse the shops, soak in the atmosphere. The old town is beautiful at night with lanterns lit up.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Black+Dragon+Pool+Lijiang" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Black Dragon Pool</a>
+        <a href="https://uri.amap.com/search?keyword=%E9%BB%91%E9%BE%99%E6%BD%AD%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        &nbsp;
+        <a href="https://www.google.com/maps/search/?api=1&query=Lijiang+Old+Town" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Lijiang Old Town</a>
+        <a href="https://uri.amap.com/search?keyword=%E4%B8%BD%E6%B1%9F%E5%8F%A4%E5%9F%8E" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <div class="card-tags">
+          <span class="tag tag-place">Iconic View</span>
+          <span class="tag tag-activity">Evening Walk</span>
+          <span class="tag tag-photo">Night Photography</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div><!-- /collapsible: Day 2 -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- DAY 3                                      -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="day-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <span class="day-number">Day 3</span>
+    <span class="day-title">Tiger Leaping Gorge &rarr; Shangri-La</span>
+    <span class="day-subtitle">Mon, Mar 2</span>
+    <span class="day-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="hotel-bar">
+    <span class="hotel-icon">&#x1F3E8;</span>
+    <span class="hotel-name">Bandu Oxygen Supply Homestay</span>
+    <span class="hotel-zone">Shangri-La, Dukezong Old Town &mdash; Call staff to help carry luggage</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=Bandu+Oxygen+Supply+Homestay+Shangri-La" target="_blank" rel="noopener" class="map-link" style="margin-left:auto;font-size:12px;">&#x1F4CD; Hotel Map</a>
+    <a href="https://uri.amap.com/search?keyword=%E5%8D%8A%E5%BA%A6%E6%B0%A7%E5%B1%85%E6%B0%91%E5%AE%BF%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap" style="font-size:12px;">&#x1F5FA; Amap</a>
+  </div>
+
+  <div class="gear-box">
+    <h4>&#x1F699; Today's Gear &mdash; Long Drive Day</h4>
+    <div class="gear-row">
+      <div class="gear-item"><strong>Temperature</strong>10-15&#xB0;C (TLG), -5 to 5&#xB0;C (Shangri-La evening)</div>
+      <div class="gear-item"><strong>Altitude</strong>2,600m (TLG) &#x2192; 3,200m (Shangri-La)</div>
+      <div class="gear-item"><strong>Wear</strong>Layers! Start with light jacket, keep heavy down jacket accessible for Shangri-La arrival. Hiking shoes for TLG stairs.</div>
+      <div class="gear-item"><strong>Day Bag</strong>&#x26A0;&#xFE0F; Motion sickness pills (take 30 min before!), oxygen (1 can), snacks, water, warm layer for van</div>
+      <div class="gear-item"><strong>Tonight</strong>Turn on room heater! Use oxygen supply if needed. Drink warm water.</div>
+    </div>
+    <div class="outfit-visual">
+      <div class="outfit-item warning"><span class="outfit-emoji">&#x1F9E5;</span><span class="outfit-label">Heavy Down Jacket</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F9E3;</span><span class="outfit-label">Scarf</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F456;</span><span class="outfit-label">Warm Pants</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F97E;</span><span class="outfit-label">Hiking Boots</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F9E4;</span><span class="outfit-label">Gloves</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F9E2;</span><span class="outfit-label">Beanie</span></div>
+    </div>
+    <div class="outfit-visual" style="border-top:none;padding-top:0;margin-top:4px;">
+      <div class="outfit-item warning"><span class="outfit-emoji">&#x1F48A;</span><span class="outfit-label">Motion sickness pills!</span></div>
+    </div>
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline-item danger">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">08:30</span>
+          <span class="card-emoji">&#x1F699;</span>
+          <span class="card-title">Depart for Tiger Leaping Gorge</span>
+        </div>
+        <div class="card-desc">
+          Long drive with <strong>lots of curves!</strong> Take motion sickness pills <strong>30 minutes before departure</strong>. The road is scenic but winding. Beautiful views of the river valley along the way.
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-drive">~2 hr Drive</span>
+          <span class="tag tag-warn">Take Motion Sickness Pills!</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">10:30</span>
+          <span class="card-emoji">&#x1F30A;</span>
+          <span class="card-title">Tiger Leaping Gorge</span>
+        </div>
+        <div class="card-desc">
+          One of the deepest gorges in the world! Walk down the stairs to the <strong>strongest rapids point</strong> &mdash; where the Jinsha River (Upper Yangtze) crashes through a narrow gap. The legend says a tiger leaped across using a rock in the middle. <strong>Allow ~1.5 hours total</strong> for the walk down and back up. The stairs can be tiring but the views are absolutely worth it.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Tiger+Leaping+Gorge+Lijiang" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E8%99%8E%E8%B7%B3%E5%B3%A1" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <a href="https://map.baidu.com/search/?querytype=s&wd=%E8%99%8E%E8%B7%B3%E5%B3%A1" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
+        <div class="card-tags">
+          <span class="tag tag-place">World Famous</span>
+          <span class="tag tag-activity">~1.5 hr Walk</span>
+          <span class="tag tag-photo">Epic Views</span>
+        </div>
+        <img class="card-photo" src="https://images.unsplash.com/photo-1634647164450-cf5bc8a983bb?w=800&q=75" alt="Tiger Leaping Gorge" />
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">12:00</span>
+          <span class="card-emoji">&#x1F336;&#xFE0F;</span>
+          <span class="card-title">Lunch - Sichuan-Style Food</span>
+        </div>
+        <div class="card-desc">
+          Local <strong>Sichuan-style food</strong> near the gorge. Hearty and spicy &mdash; perfect fuel for the road ahead. The region's cuisine blends Yunnan and Sichuan flavors.
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-food">Sichuan Food</span>
+          <span class="tag tag-food">Spicy!</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">13:30</span>
+          <span class="card-emoji">&#x1F6E3;&#xFE0F;</span>
+          <span class="card-title">Drive to Shangri-La</span>
+        </div>
+        <div class="card-desc">
+          Continue driving up to Shangri-La. Watch the scenery transform from gorge valleys to <strong>Tibetan grasslands</strong>. You'll notice the landscape, architecture, and prayer flags changing as you climb to 3,200m. The cultural shift is remarkable.
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-drive">~2.5 hr Drive</span>
+          <span class="tag tag-place">Scenery Changes</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item rest">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">16:00</span>
+          <span class="card-emoji">&#x1F3E8;</span>
+          <span class="card-title">Arrive Shangri-La / Check-in</span>
+        </div>
+        <div class="card-desc">
+          Check-in at <strong>Bandu Oxygen Supply Homestay</strong> in Dukezong Old Town. <strong>Turn on the heater</strong> &mdash; it gets cold at night! Adjust to the 3,200m altitude. The homestay has oxygen supply if you need it. Call staff to help carry luggage through the old town streets.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Bandu+Oxygen+Supply+Homestay+Shangri-La" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Hotel Map</a>
+        <a href="https://uri.amap.com/search?keyword=%E5%8D%8A%E5%BA%A6%E6%B0%A7%E5%B1%85%E6%B0%91%E5%AE%BF%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <div class="card-tags">
+          <span class="tag tag-stay">Check-in</span>
+          <span class="tag tag-warn">3,200m Altitude</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">17:00</span>
+          <span class="card-emoji">&#x1F6D5;</span>
+          <span class="card-title">Dafo Temple - Giant Golden Prayer Wheel</span>
+        </div>
+        <div class="card-desc">
+          Walk from the hotel to <strong>Dafo Temple</strong> &mdash; home to the world's largest prayer wheel! It's <strong>so massive that you need about 10 people</strong> to spin it together. An incredible communal experience. The sunset views from the temple hill over Dukezong Old Town are stunning.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Dukezong+Giant+Prayer+Wheel+Shangri-La" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E9%BE%9F%E5%B1%B1%E5%85%AC%E5%9B%AD%E8%BD%AC%E7%BB%8F%E7%AD%92%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <a href="https://map.baidu.com/search/?querytype=s&wd=%E9%BE%9F%E5%B1%B1%E5%85%AC%E5%9B%AD%E8%BD%AC%E7%BB%8F%E7%AD%92+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
+        <div class="card-tags">
+          <span class="tag tag-place">Giant Prayer Wheel</span>
+          <span class="tag tag-activity">Needs 10 People!</span>
+          <span class="tag tag-photo">Sunset Views</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">19:00</span>
+          <span class="card-emoji">&#x1F372;</span>
+          <span class="card-title">Dinner - Yak Meat Hotpot</span>
+        </div>
+        <div class="card-desc">
+          A <strong>must-try in Shangri-La!</strong> Yak meat hotpot is the quintessential Tibetan dining experience. Rich, warming broth with tender yak slices, mushrooms, and local vegetables. The perfect meal to warm up on a cold Shangri-La evening. Also try <strong>Tibetan butter tea</strong> if you're adventurous!
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-food">Must-Try!</span>
+          <span class="tag tag-food">Yak Hotpot</span>
+          <span class="tag tag-food">Butter Tea</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div><!-- /collapsible: Day 3 -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- DAY 4                                      -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="day-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <span class="day-number">Day 4</span>
+    <span class="day-title">Pudacuo National Park & Napa Lake</span>
+    <span class="day-subtitle">Tue, Mar 3</span>
+    <span class="day-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="hotel-bar">
+    <span class="hotel-icon">&#x1F3E8;</span>
+    <span class="hotel-name">Bandu Oxygen Supply Homestay</span>
+    <span class="hotel-zone">Shangri-La, Dukezong Old Town (same hotel)</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=Bandu+Oxygen+Supply+Homestay+Shangri-La" target="_blank" rel="noopener" class="map-link" style="margin-left:auto;font-size:12px;">&#x1F4CD; Hotel Map</a>
+    <a href="https://uri.amap.com/search?keyword=%E5%8D%8A%E5%BA%A6%E6%B0%A7%E5%B1%85%E6%B0%91%E5%AE%BF%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap" style="font-size:12px;">&#x1F5FA; Amap</a>
+  </div>
+
+  <div class="gear-box">
+    <h4>&#x1F332; Today's Gear &mdash; Park &amp; Grassland</h4>
+    <div class="gear-row">
+      <div class="gear-item"><strong>Temperature</strong>3-12&#xB0;C daytime, -5 to 2&#xB0;C night</div>
+      <div class="gear-item"><strong>Altitude</strong>3,500m (Pudacuo) / 3,260m (Napa Lake)</div>
+      <div class="gear-item"><strong>Wear</strong>&#x26A0;&#xFE0F; Windproof jacket essential! Down jacket + warm pants. Napa Lake is extremely windy &mdash; beanie &amp; sunglasses a must.</div>
+      <div class="gear-item"><strong>Day Bag</strong>Sunglasses, sunscreen, cash (Pudacuo ~100 CNY, Tibetan costume rental ~50-100 CNY), oxygen (1 can)</div>
+      <div class="gear-item"><strong>Tonight</strong>Pack for checkout &mdash; long drive to Deqin tomorrow. Full warm gear ready. Motion sickness pills &#x2192; day bag.</div>
+    </div>
+    <div class="outfit-visual">
+      <div class="outfit-item warning"><span class="outfit-emoji">&#x1F9E5;</span><span class="outfit-label">Windproof Jacket</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F455;</span><span class="outfit-label">Warm Layers</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F456;</span><span class="outfit-label">Warm Pants</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F97E;</span><span class="outfit-label">Walking Shoes</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F576;&#xFE0F;</span><span class="outfit-label">Sunglasses</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F9E2;</span><span class="outfit-label">Beanie</span></div>
+    </div>
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">08:30</span>
+          <span class="card-emoji">&#x1F332;</span>
+          <span class="card-title">Pudacuo National Park (&#x666E;&#x8FBE;&#x63AA;&#x56FD;&#x5BB6;&#x516C;&#x56ED;)</span>
+        </div>
+        <div class="card-desc">
+          China's first national park! Walk along wooden boardwalks through <strong>pristine alpine forest and crystal-clear lakes</strong>. The trail is flat and easy &mdash; a peaceful morning immersed in nature. The misty pine forests and mirror-like lakes create an incredible <strong>pastel mood</strong> that's perfect for photos.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Potatso+National+Park+Shangri-La" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E6%99%AE%E8%BE%BE%E6%8E%AA%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <a href="https://map.baidu.com/search/?querytype=s&wd=%E6%99%AE%E8%BE%BE%E6%8E%AA%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
+        <div class="card-tags">
+          <span class="tag tag-place">National Park</span>
+          <span class="tag tag-activity">Easy Boardwalk</span>
+          <span class="tag tag-photo">Pastel Mood Photos</span>
+        </div>
+        <img class="card-photo" src="https://images.unsplash.com/photo-1695284393127-0e26fbfcd896?w=800&q=75" alt="Pudacuo National Park" />
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">12:00</span>
+          <span class="card-emoji">&#x1F35C;</span>
+          <span class="card-title">Lunch near Napa Lake</span>
+        </div>
+        <div class="card-desc">
+          Head to the Napa Lake area for lunch. Local Tibetan and Yunnan cuisine options available near the lake.
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-food">Lunch</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">13:30</span>
+          <span class="card-emoji">&#x1F40E;</span>
+          <span class="card-title">Napa Lake &amp; Yila Grassland (&#x7EB3;&#x5E15;&#x6D77; / &#x4F9D;&#x62C9;&#x8349;&#x539F;)</span>
+        </div>
+        <div class="card-desc">
+          A vast grassland lake surrounded by mountains. Watch <strong>yak herds and horses</strong> roaming freely across the meadows. Rent a <strong>Tibetan costume</strong> for your girlfriend and snap some amazing photos against the open landscape. The wind can be fierce here &mdash; that's part of the experience!
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Napa+Lake+Shangri-La" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E7%BA%B3%E5%B8%95%E6%B5%B7%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <a href="https://map.baidu.com/search/?querytype=s&wd=%E7%BA%B3%E5%B8%95%E6%B5%B7+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
+        <div class="card-tags">
+          <span class="tag tag-activity">Yak Herds &amp; Horses</span>
+          <span class="tag tag-photo">Tibetan Costume Photos</span>
+          <span class="tag tag-warn">Very Windy!</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item rest">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">16:00</span>
+          <span class="card-emoji">&#x1F9D6;</span>
+          <span class="card-title">Rest / Foot Massage + Cafe</span>
+        </div>
+        <div class="card-desc">
+          Head back to old town for some downtime. Find a cozy <strong>foot massage</strong> place or relax in one of Dukezong's charming <strong>cafes</strong>. You've earned it after 4 days on the go!
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-rest">Massage</span>
+          <span class="tag tag-rest">Cafe Time</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">18:00</span>
+          <span class="card-emoji">&#x1F3EE;</span>
+          <span class="card-title">Dukezong Old Town Evening Walk</span>
+        </div>
+        <div class="card-desc">
+          Stroll through the ancient Tibetan streets of <strong>Dukezong Old Town</strong>. Buy souvenirs &mdash; Tibetan jewelry, prayer flags, yak wool scarves. Try <strong>Tibetan yogurt</strong> from a street vendor &mdash; thick, tangy, and unique. The old town has a completely different vibe from Lijiang &mdash; more rugged, more authentic.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Dukezong+Old+Town+Shangri-La" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E7%8B%AC%E5%85%8B%E5%AE%97%E5%8F%A4%E5%9F%8E%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <a href="https://map.baidu.com/search/?querytype=s&wd=%E7%8B%AC%E5%85%8B%E5%AE%97%E5%8F%A4%E5%9F%8E+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
+        <div class="card-tags">
+          <span class="tag tag-shop">Souvenirs</span>
+          <span class="tag tag-food">Tibetan Yogurt</span>
+          <span class="tag tag-activity">Evening Walk</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div><!-- /collapsible: Day 4 -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- DAY 5                                      -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="day-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <span class="day-number">Day 5</span>
+    <span class="day-title">Road Trip: Songzanlin &rarr; Deqin</span>
+    <span class="day-subtitle">Wed, Mar 4</span>
+    <span class="day-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="hotel-bar">
+    <span class="hotel-icon">&#x1F3E8;</span>
+    <span class="hotel-name">Guanjing Tiantang Hotel</span>
+    <span class="hotel-zone">Feilai Si &mdash; Room with Meili Snow Mountain View</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=Guanjing+Tiantang+Hotel+Feilai+Si+Deqin" target="_blank" rel="noopener" class="map-link" style="margin-left:auto;font-size:12px;">&#x1F4CD; Hotel Map</a>
+    <a href="https://uri.amap.com/search?keyword=%E8%A7%82%E6%99%AF%E5%A4%A9%E5%A0%82%E5%A4%A7%E9%85%92%E5%BA%97%2B%E9%A3%9E%E6%9D%A5%E5%AF%BA" target="_blank" rel="noopener" class="map-link-amap" style="font-size:12px;">&#x1F5FA; Amap</a>
+  </div>
+
+  <div class="gear-box">
+    <h4>&#x1F699; Today's Gear &mdash; Temple + Scenic Drive + Mountain Pass</h4>
+    <div class="gear-row">
+      <div class="gear-item"><strong>Temperature</strong>3-12&#xB0;C (morning temple), -5 to 5&#xB0;C at Baima Pass, 3-10&#xB0;C at Feilai Si</div>
+      <div class="gear-item"><strong>Altitude</strong>3,300m (Songzanlin) &#x2192; 4,292m (Baima Pass) &#x2192; 3,400m (Feilai Si)</div>
+      <div class="gear-item"><strong>Wear</strong>Full winter gear from morning. Cover shoulders/knees for temple &mdash; remove hats inside prayer halls. Heavy down, gloves, beanie for Baima Pass.</div>
+      <div class="gear-item"><strong>Day Bag</strong>&#x26A0;&#xFE0F; Motion sickness pills! Oxygen (1 can), snacks for long drive, warm layers, camera, sunglasses (golden roofs!)</div>
+      <div class="gear-item"><strong>Tonight</strong>&#x2B50; MOST CRITICAL NIGHT! Charge camera battery FULLY. Set alarm 06:30. Lay out warmest clothes for sunrise.</div>
+    </div>
+    <div class="outfit-visual">
+      <div class="outfit-item warning"><span class="outfit-emoji">&#x1F9E5;</span><span class="outfit-label">Heaviest Coat</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F9E4;</span><span class="outfit-label">Gloves</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F9E3;</span><span class="outfit-label">Neck Warmer</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F9E2;</span><span class="outfit-label">Beanie</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F456;</span><span class="outfit-label">Warm Pants</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F97E;</span><span class="outfit-label">Boots</span></div>
+    </div>
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">08:30</span>
+          <span class="card-emoji">&#x1F3DB;&#xFE0F;</span>
+          <span class="card-title">Songzanlin Monastery (&#x677E;&#x8D5E;&#x6797;&#x5BFA;)</span>
+        </div>
+        <div class="card-desc">
+          The <strong>"Little Potala Palace"</strong> &mdash; the biggest Tibetan Buddhist monastery in Yunnan! Built in 1679, it houses over 700 monks. Climb the <strong>146 steps</strong> to the main prayer hall for incredible Tibetan Buddhist art, thangka paintings, and golden statues. The golden rooftops gleaming against the blue sky is unforgettable.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Songzanlin+Monastery+Shangri-La" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E6%9D%BE%E8%B5%9E%E6%9E%97%E5%AF%BA%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <a href="https://map.baidu.com/search/?querytype=s&wd=%E6%9D%BE%E8%B5%9E%E6%9E%97%E5%AF%BA+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
+        <div class="card-tags">
+          <span class="tag tag-place">Little Potala</span>
+          <span class="tag tag-activity">Tibetan Culture</span>
+          <span class="tag tag-activity">146 Steps</span>
+        </div>
+        <img class="card-photo" src="https://images.unsplash.com/photo-1760410731956-8fca77e1201c?w=800&q=75" alt="Songzanlin Monastery" />
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">10:30</span>
+          <span class="card-emoji">&#x1F699;</span>
+          <span class="card-title">Begin Road Trip North to Deqin</span>
+        </div>
+        <div class="card-desc">
+          Leave Shangri-La and begin the legendary scenic drive to Deqin. This is one of the most beautiful driving routes in China &mdash; winding through <strong>snow mountains, deep valleys, and Tibetan villages</strong>. The scenery gets increasingly dramatic as you climb higher.
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-drive">Road Trip Begins</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">En Route</span>
+          <span class="card-emoji">&#x1F30D;</span>
+          <span class="card-title">Jinsha River Great Bend (&#x91D1;&#x6C99;&#x6C5F;&#x5927;&#x62D0;&#x5F2F;)</span>
+        </div>
+        <div class="card-desc">
+          Stop at the famous <strong>Great Bend of the Jinsha River</strong> &mdash; a dramatic horseshoe turn where the river makes an incredible omega shape. An unbeatable photo opportunity from the viewpoint above.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Jinsha+River+Great+Bend+Yunnan" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E9%87%91%E6%B2%99%E6%B1%9F%E5%A4%A7%E6%8B%90%E5%BC%AF" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <a href="https://map.baidu.com/search/?querytype=s&wd=%E9%87%91%E6%B2%99%E6%B1%9F%E5%A4%A7%E6%8B%90%E5%BC%AF" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
+        <div class="card-tags">
+          <span class="tag tag-place">Scenic Stop</span>
+          <span class="tag tag-photo">Omega Bend</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">En Route</span>
+          <span class="card-emoji">&#x1F3D4;&#xFE0F;</span>
+          <span class="card-title">Baima Snow Mountain Pass (&#x767D;&#x9A6C;&#x96EA;&#x5C71; 4,292m)</span>
+        </div>
+        <div class="card-desc">
+          Cross the <strong>Baima Snow Mountain</strong> at 4,292m. Prayer flags flutter everywhere at the pass. Quick photo stop &mdash; you're driving through the clouds at this altitude! If the weather is clear, the views are mind-blowing.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Baima+Snow+Mountain+Pass+Yunnan" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E7%99%BD%E9%A9%AC%E9%9B%AA%E5%B1%B1%E5%9E%AD%E5%8F%A3" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <a href="https://map.baidu.com/search/?querytype=s&wd=%E7%99%BD%E9%A9%AC%E9%9B%AA%E5%B1%B1%E5%9E%AD%E5%8F%A3" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
+        <div class="card-tags">
+          <span class="tag tag-place">4,292m Pass</span>
+          <span class="tag tag-photo">Prayer Flags</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">14:00</span>
+          <span class="card-emoji">&#x1F35C;</span>
+          <span class="card-title">Lunch Stop</span>
+        </div>
+        <div class="card-desc">
+          Stop for lunch along the route. Local Tibetan and Yunnan food. A welcome break after the mountain driving. Stretch your legs!
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-food">Lunch Break</span>
+          <span class="tag tag-drive">Rest Stop</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item rest">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">16:30</span>
+          <span class="card-emoji">&#x1F3E8;</span>
+          <span class="card-title">Arrive Feilai Si / Check-in (&#x98DE;&#x6765;&#x5BFA;)</span>
+        </div>
+        <div class="card-desc">
+          Check-in at <strong>Guanjing Tiantang Hotel</strong> in Feilai Si. Make sure you have a <strong>mountain view room</strong> &mdash; this is what you came for! The hotel faces directly toward Meili Snow Mountain and Kawagebo Peak (6,740m, the tallest in Yunnan).
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Guanjing+Tiantang+Hotel+Feilai+Si+Deqin" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Hotel Map</a>
+        <a href="https://uri.amap.com/search?keyword=%E8%A7%82%E6%99%AF%E5%A4%A9%E5%A0%82%E5%A4%A7%E9%85%92%E5%BA%97%2B%E9%A3%9E%E6%9D%A5%E5%AF%BA" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <div class="card-tags">
+          <span class="tag tag-stay">Mountain View Room</span>
+          <span class="tag tag-place">Feilai Si</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">17:00</span>
+          <span class="card-emoji">&#x2615;</span>
+          <span class="card-title">Afternoon Tea - Meili Snow Mountain View</span>
+        </div>
+        <div class="card-desc">
+          Sit on your room balcony with a cup of tea and simply <strong>gaze at Meili Snow Mountain</strong>. Kawagebo Peak (6,740m) stands before you &mdash; the most sacred mountain in Tibetan Buddhism in Yunnan. It has <strong>never been summited</strong>. This view is truly priceless. One of those moments you'll remember forever.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Feilai+Si+Meili+Snow+Mountain+Viewpoint" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Feilai Si Viewpoint</a>
+        <a href="https://uri.amap.com/search?keyword=%E9%A3%9E%E6%9D%A5%E5%AF%BA%2B%E6%A2%85%E9%87%8C%E9%9B%AA%E5%B1%B1" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <div class="card-tags">
+          <span class="tag tag-place">Priceless View</span>
+          <span class="tag tag-rest">Balcony Tea</span>
+          <span class="tag tag-photo">Kawagebo Peak</span>
+        </div>
+        <img class="card-photo" src="https://images.unsplash.com/photo-1568005508084-d289b79374f5?w=800&q=75" alt="Meili Snow Mountain at Dusk" />
+      </div>
+    </div>
+
+  </div>
+  </div><!-- /collapsible: Day 5 -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- DAY 6                                      -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="day-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <span class="day-number">Day 6</span>
+    <span class="day-title">Golden Sunrise + Benzilan Luxury</span>
+    <span class="day-subtitle">Thu, Mar 5</span>
+    <span class="day-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="hotel-bar">
+    <span class="hotel-icon">&#x1F3E8;</span>
+    <span class="hotel-name">LUX* Tea Horse Road</span>
+    <span class="hotel-zone">Benzilan &mdash; Luxury Retreat</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=LUX+Tea+Horse+Road+Benzilan" target="_blank" rel="noopener" class="map-link" style="margin-left:auto;font-size:12px;">&#x1F4CD; Hotel Map</a>
+    <a href="https://uri.amap.com/search?keyword=LUX%E8%8C%B6%E9%A9%AC%E5%8F%A4%E9%81%93%2B%E5%A5%94%E5%AD%90%E6%A0%8F" target="_blank" rel="noopener" class="map-link-amap" style="font-size:12px;">&#x1F5FA; Amap</a>
+  </div>
+
+  <div class="gear-box">
+    <h4>&#x1F305; Today's Gear &mdash; Sunrise + Luxury</h4>
+    <div class="gear-row">
+      <div class="gear-item"><strong>Temperature</strong>-10 to 0&#xB0;C at sunrise, 15-20&#xB0;C in Benzilan PM</div>
+      <div class="gear-item"><strong>Altitude</strong>3,400m (Feilai Si) &#x2192; 2,000m (Benzilan)</div>
+      <div class="gear-item"><strong>Wear</strong>Warmest gear for 06:40 sunrise &mdash; standing still in sub-zero. Shed layers as you descend. Smart casual for LUX* dinner!</div>
+      <div class="gear-item"><strong>Day Bag</strong>Camera + charged battery (keep spare warm in jacket!), phone, power bank, warm water</div>
+      <div class="gear-item"><strong>Tonight</strong>Pack for checkout. Last night of luxury! Charge devices. Casual packing &mdash; heading to milder elevation.</div>
+    </div>
+    <div class="outfit-time-label">&#x2600;&#xFE0F; Morning (Sunrise -8&#xB0;C)</div>
+    <div class="outfit-visual">
+      <div class="outfit-item warning"><span class="outfit-emoji">&#x1F9E5;</span><span class="outfit-label">Heaviest Coat</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F9E4;</span><span class="outfit-label">Gloves</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F9E3;</span><span class="outfit-label">Scarf</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F9E2;</span><span class="outfit-label">Beanie</span></div>
+      <div class="outfit-item warning"><span class="outfit-emoji">&#x1F525;</span><span class="outfit-label">FREEZING sunrise!</span></div>
+    </div>
+    <div class="outfit-time-label">&#x1F324;&#xFE0F; Afternoon (Benzilan 20&#xB0;C)</div>
+    <div class="outfit-visual">
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F455;</span><span class="outfit-label">Light Layers</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F456;</span><span class="outfit-label">Pants</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F45F;</span><span class="outfit-label">Sneakers</span></div>
+    </div>
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline-item danger">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">06:40</span>
+          <span class="card-emoji">&#x23F0;</span>
+          <span class="card-title">Wake Up! Sunrise Prep</span>
+        </div>
+        <div class="card-desc">
+          <strong>Set your alarm!</strong> Get to the window or rooftop terrace. Have your camera ready, battery charged from the night before. This is the <strong>crown jewel moment</strong> of the entire trip. Don't miss it!
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-warn">Set Alarm!</span>
+          <span class="tag tag-photo">Charge Camera!</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">07:00</span>
+          <span class="card-emoji">&#x1F305;</span>
+          <span class="card-title">GOLDEN SUNRISE - Meili Snow Mountain</span>
+        </div>
+        <div class="card-desc">
+          <strong>THE moment.</strong> As the first rays of sunlight hit Kawagebo Peak and the surrounding peaks, they turn from grey to <strong>brilliant gold</strong>. The "Rizhao Jinshan" (&#x65E5;&#x7167;&#x91D1;&#x5C71;) phenomenon lasts about <strong>20 magical minutes</strong>. The peaks glow gold, then orange, then pink as the sun rises higher. Many Chinese travelers consider seeing this once in their lifetime a blessing. You can see why.
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-photo">Trip Crown Jewel</span>
+          <span class="tag tag-place">Rizhao Jinshan</span>
+          <span class="tag tag-activity">~20 Minutes</span>
+        </div>
+        <img class="card-photo" src="https://images.unsplash.com/photo-1669967420852-85c16aa2f92f?w=800&q=75" alt="Meili Golden Sunrise" />
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">08:00</span>
+          <span class="card-emoji">&#x1F373;</span>
+          <span class="card-title">Breakfast / Check-out</span>
+        </div>
+        <div class="card-desc">
+          Breakfast at the hotel while still basking in that sunrise afterglow. Then pack up and check out.
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-food">Breakfast</span>
+          <span class="tag tag-stay">Check-out</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">09:00</span>
+          <span class="card-emoji">&#x1F9CA;</span>
+          <span class="card-title">Optional: Mingyong Glacier</span>
+        </div>
+        <div class="card-desc">
+          If the group is up for it, visit <strong>Mingyong Glacier</strong> &mdash; a sacred glacier descending from Meili Snow Mountain. Take the battery car up, then walk the trail to see the glacier face. It's the lowest-latitude glacier of its type in China. A powerful, humbling sight.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Mingyong+Glacier+Deqin" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E6%98%8E%E6%B0%B8%E5%86%B0%E5%B7%9D%2B%E5%BE%B7%E9%92%A6" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <a href="https://map.baidu.com/search/?querytype=s&wd=%E6%98%8E%E6%B0%B8%E5%86%B0%E5%B7%9D+%E5%BE%B7%E9%92%A6" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
+        <div class="card-tags">
+          <span class="tag tag-activity">Optional</span>
+          <span class="tag tag-place">Sacred Glacier</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">13:00</span>
+          <span class="card-emoji">&#x1F35B;</span>
+          <span class="card-title">Lunch</span>
+        </div>
+        <div class="card-desc">
+          Lunch nearby before heading to Benzilan. Last meal in the high mountains!
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-food">Lunch</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">14:00</span>
+          <span class="card-emoji">&#x1F699;</span>
+          <span class="card-title">Drive Down to Benzilan</span>
+        </div>
+        <div class="card-desc">
+          Drive back down to <strong>Benzilan</strong> at 2,000m. Feel the temperature rise and the air thicken with each meter of descent. Back to warmth!
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-drive">Drive to Warmth</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">16:30</span>
+          <span class="card-emoji">&#x2728;</span>
+          <span class="card-title">Check-in LUX* Tea Horse Road</span>
+        </div>
+        <div class="card-desc">
+          Welcome to luxury! <strong>LUX* Tea Horse Road Benzilan</strong> is a world-class resort nestled in the mountains along the ancient Tea Horse Road. After days of adventure and altitude, this is your <strong>ultimate reward</strong>. Stunning architecture, incredible views, and top-tier service.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=LUX+Tea+Horse+Road+Benzilan" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=LUX%E8%8C%B6%E9%A9%AC%E5%8F%A4%E9%81%93%2B%E5%A5%94%E5%AD%90%E6%A0%8F" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <a href="https://map.baidu.com/search/?querytype=s&wd=LUX%E8%8C%B6%E9%A9%AC%E5%8F%A4%E9%81%93+%E5%A5%94%E5%AD%90%E6%A0%8F" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
+        <div class="card-tags">
+          <span class="tag tag-luxury">Luxury Resort</span>
+          <span class="tag tag-stay">LUX* Benzilan</span>
+        </div>
+        <img class="card-photo" src="https://images.unsplash.com/photo-1677922069662-bd3a0489f8be?w=800&q=75" alt="LUX Tea Horse Road Benzilan" />
+      </div>
+    </div>
+
+    <div class="timeline-item rest">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">17:00+</span>
+          <span class="card-emoji">&#x1F6C1;</span>
+          <span class="card-title">100% Relax Mode</span>
+        </div>
+        <div class="card-desc">
+          <strong>Relax, relax, relax.</strong> Swim in the pool, sip wine, sink into the soft beds, take a long bath. You've earned every second of this after 5 days of mountain adventure. No schedule, no rushing. Just pure comfort.
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-rest">Pool</span>
+          <span class="tag tag-rest">Wine</span>
+          <span class="tag tag-luxury">Soft Beds</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">18:00</span>
+          <span class="card-emoji">&#x1F377;</span>
+          <span class="card-title">Celebration Dinner with Wine</span>
+        </div>
+        <div class="card-desc">
+          Fine dining at the LUX* restaurant. Celebrate the trip with great food and wine. The menu blends local Yunnan ingredients with international culinary techniques. Toast to the golden sunrise, the snow mountains, and the memories made. <strong>Tonight, you feast like royalty.</strong>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-food">Fine Dining</span>
+          <span class="tag tag-luxury">Celebration</span>
+          <span class="tag tag-food">Wine</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div><!-- /collapsible: Day 6 -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- DAY 7                                      -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="day-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <span class="day-number">Day 7</span>
+    <span class="day-title">Chill Day &mdash; Back to Lijiang</span>
+    <span class="day-subtitle">Fri, Mar 6</span>
+    <span class="day-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="hotel-bar">
+    <span class="hotel-icon">&#x1F3E8;</span>
+    <span class="hotel-name">Wyndham Villa</span>
+    <span class="hotel-zone">Near Shuhe Ancient Town &mdash; Villa for farewell party!</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=Wyndham+Resort+Lijiang+Shuhe" target="_blank" rel="noopener" class="map-link" style="margin-left:auto;font-size:12px;">&#x1F4CD; Hotel Map</a>
+    <a href="https://uri.amap.com/search?keyword=%E6%B8%A9%E5%BE%B7%E5%A7%86%E9%85%92%E5%BA%97%2B%E4%B8%BD%E6%B1%9F%E6%9D%9F%E6%B2%B3" target="_blank" rel="noopener" class="map-link-amap" style="font-size:12px;">&#x1F5FA; Amap</a>
+  </div>
+
+  <div class="gear-box">
+    <h4>&#x1F6CD;&#xFE0F; Today's Gear &mdash; Drive + Shopping + Villa Party</h4>
+    <div class="gear-row">
+      <div class="gear-item"><strong>Temperature</strong>12-18&#xB0;C in Lijiang</div>
+      <div class="gear-item"><strong>Altitude</strong>2,400m (Lijiang)</div>
+      <div class="gear-item"><strong>Wear</strong>Street fashion! Sneakers, casual cool outfit. No more heavy winter gear needed. Light jacket for evening.</div>
+      <div class="gear-item"><strong>Day Bag</strong>Cash for shopping &amp; souvenirs, phone for photos</div>
+      <div class="gear-item"><strong>Tonight</strong>Pack everything for departure. Share photos! Set alarm for flight tomorrow.</div>
+    </div>
+    <div class="outfit-visual">
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F455;</span><span class="outfit-label">Street Fashion</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F456;</span><span class="outfit-label">Casual Pants</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F45F;</span><span class="outfit-label">Sneakers</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F9E5;</span><span class="outfit-label">Light Jacket</span></div>
+    </div>
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">09:00</span>
+          <span class="card-emoji">&#x1F699;</span>
+          <span class="card-title">Drive Back to Lijiang</span>
+        </div>
+        <div class="card-desc">
+          Say goodbye to Benzilan and begin the scenic drive back to <strong>Lijiang</strong>. No major stops today &mdash; just sit back, enjoy the views one last time, and relax. The scenery along the way is still incredible.
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-drive">Scenic Drive</span>
+          <span class="tag tag-rest">Relaxed Pace</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">14:00</span>
+          <span class="card-emoji">&#x1F3E0;</span>
+          <span class="card-title">Arrive &amp; Check-in Wyndham Villa</span>
+        </div>
+        <div class="card-desc">
+          Arrive in Lijiang and check into the <strong>Wyndham Villa</strong> near Shuhe. Settle in, freshen up, and get ready for a chill evening. Switch from mountain gear to <strong>street fashion</strong>!
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Wyndham+Resort+Lijiang+Shuhe" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Villa Map</a>
+        <a href="https://uri.amap.com/search?keyword=%E6%B8%A9%E5%BE%B7%E5%A7%86%E9%85%92%E5%BA%97%2B%E4%B8%BD%E6%B1%9F%E6%9D%9F%E6%B2%B3" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <div class="card-tags">
+          <span class="tag tag-stay">Villa Check-in</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">15:30</span>
+          <span class="card-emoji">&#x1F6CD;&#xFE0F;</span>
+          <span class="card-title">Lijiang Old Town / Shuhe Old Town</span>
+        </div>
+        <div class="card-desc">
+          Head out for a <strong>chill stroll</strong> through <strong>Lijiang Old Town</strong> (&#x4E3D;&#x6C5F;&#x53E4;&#x57CE;) or <strong>Shuhe Old Town</strong> (&#x675F;&#x6CB3;&#x53E4;&#x9547;, closer to the villa). Browse souvenir shops, buy gifts for friends and family. Sip on <strong>craft beer or Yunnan coffee</strong> at a rooftop caf&#xE9;. Pure chill vibes &mdash; 100% relaxation after the adventure.
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Lijiang+Old+Town" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Lijiang Old Town</a>
+        <a href="https://uri.amap.com/search?keyword=%E4%B8%BD%E6%B1%9F%E5%8F%A4%E5%9F%8E" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Shuhe+Ancient+Town+Lijiang" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Shuhe Old Town</a>
+        <a href="https://uri.amap.com/search?keyword=%E6%9D%9F%E6%B2%B3%E5%8F%A4%E9%95%87%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <div class="card-tags">
+          <span class="tag tag-shop">Souvenirs</span>
+          <span class="tag tag-food">Craft Beer / Coffee</span>
+          <span class="tag tag-rest">100% Chill</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">19:00</span>
+          <span class="card-emoji">&#x1F3C6;</span>
+          <span class="card-title">Farewell Dinner + Villa Party</span>
+        </div>
+        <div class="card-desc">
+          Head out for a farewell dinner, then back to the <strong>Wyndham Villa</strong> for the <strong>farewell party</strong>! Share your best memories, compare photos, and enjoy the last night together in style. What a trip!
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-food">Farewell Dinner</span>
+          <span class="tag tag-activity">Villa Party</span>
+          <span class="tag tag-food">Last Night!</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div><!-- /collapsible: Day 7 -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- DAY 8                                      -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="day-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <span class="day-number">Day 8</span>
+    <span class="day-title">Fly Home</span>
+    <span class="day-subtitle">Sat, Mar 7</span>
+    <span class="day-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="hotel-bar">
+    <span class="hotel-icon">&#x2708;&#xFE0F;</span>
+    <span class="hotel-name">Departure Day</span>
+    <span class="hotel-zone">Ruili DR5041 &mdash; Lijiang (LJG) &rarr; Bangkok (BKK)</span>
+  </div>
+
+  <div class="gear-box">
+    <h4>&#x2708;&#xFE0F; Today's Gear &mdash; Going Home</h4>
+    <div class="gear-row">
+      <div class="gear-item"><strong>Temperature</strong>10-18&#xB0;C (Lijiang morning)</div>
+      <div class="gear-item"><strong>Altitude</strong>2,400m &#x2192; sea level!</div>
+      <div class="gear-item"><strong>Wear</strong>Whatever is comfortable for travel. Light jacket for morning.</div>
+      <div class="gear-item"><strong>Checklist</strong>All belongings packed? Souvenirs? Passport? Leftover CNY? Spend at airport shops!</div>
+      <div class="gear-item"><strong>Tip</strong>Arrive airport 2.5-3 hrs early. Counter check-in only (no online). Buy Pu'er tea at airport shops!</div>
+    </div>
+    <div class="outfit-visual">
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F455;</span><span class="outfit-label">Comfortable Travel Clothes</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F456;</span><span class="outfit-label">Pants</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F45F;</span><span class="outfit-label">Sneakers</span></div>
+      <div class="outfit-item"><span class="outfit-emoji">&#x1F9E5;</span><span class="outfit-label">Light Jacket (plane AC)</span></div>
+    </div>
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline-item rest">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">08:30</span>
+          <span class="card-emoji">&#x1F634;</span>
+          <span class="card-title">Sleep In + Breakfast</span>
+        </div>
+        <div class="card-desc">
+          No alarm today! Sleep in and enjoy a leisurely breakfast at the Pullman. Last chance to enjoy the villa and resort facilities. Savor every moment.
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-rest">Sleep In</span>
+          <span class="tag tag-food">Hotel Breakfast</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">10:30</span>
+          <span class="card-emoji">&#x1F9F3;</span>
+          <span class="card-title">Check-out + Van to Airport</span>
+        </div>
+        <div class="card-desc">
+          Pack up, check-out from Wyndham Villa. Van to Lijiang Airport &mdash; about <strong>40 minutes</strong>. Make sure you have all your belongings, souvenirs, and memories packed tight!
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Lijiang+Sanyi+International+Airport" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Airport Map</a>
+        <a href="https://uri.amap.com/search?keyword=%E4%B8%BD%E6%B1%9F%E4%B8%89%E4%B9%89%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <div class="card-tags">
+          <span class="tag tag-stay">Check-out</span>
+          <span class="tag tag-drive">40 min to Airport</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item highlight">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">13:00</span>
+          <span class="card-emoji">&#x2708;&#xFE0F;</span>
+          <span class="card-title">Fly Home - Ruili DR5041</span>
+        </div>
+        <div class="card-desc">
+          <strong>Ruili Airlines DR5041</strong> &mdash; Lijiang (LJG) to Suvarnabhumi (BKK). Direct flight home. One last look at the Yunnan mountains from the sky!
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Lijiang+Sanyi+International+Airport" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Airport Map</a>
+        <a href="https://uri.amap.com/search?keyword=%E4%B8%BD%E6%B1%9F%E4%B8%89%E4%B9%89%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
+        <div class="card-tags">
+          <span class="tag tag-flight">Ruili DR5041</span>
+          <span class="tag tag-flight">LJG &rarr; BKK</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <div class="card-top">
+          <span class="card-time">14:45</span>
+          <span class="card-emoji">&#x1F3E0;</span>
+          <span class="card-title">Land in Bangkok</span>
+        </div>
+        <div class="card-desc">
+          Welcome home! Land at <strong>Suvarnabhumi Airport (BKK)</strong> at 14:45. What an incredible 8 days. From the snow peaks of Jade Dragon to the golden sunrise of Meili, from Tiger Leaping Gorge to the luxury of Benzilan &mdash; <strong>memories for a lifetime.</strong>
+        </div>
+        <div class="card-tags">
+          <span class="tag tag-flight">BKK 14:45</span>
+          <span class="tag tag-place">Home Sweet Home</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div><!-- /collapsible: Day 8 -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- BEFORE YOU GO (Reference)                  -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <h2>&#x2705; Before You Go</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="prep-grid">
+    <div class="prep-card status-ok">
+      <h3>&#x1F6C2; Visa</h3>
+      <p><strong>Thai nationals do NOT need a visa for China!</strong> Since March 2024, Thailand has full visa exemption.</p>
+      <ul>
+        <li>Stay limit: up to <strong>30 days</strong> per entry</li>
+        <li>Just bring your passport (6+ months validity)</li>
+        <li>No application needed &mdash; just go!</li>
+      </ul>
+    </div>
+
+    <div class="prep-card status-action">
+      <h3>&#x1F4CB; China Arrival Card</h3>
+      <p><strong>REQUIRED for all foreign travelers.</strong></p>
+      <ul>
+        <li>Fill out online BEFORE your flight to save time</li>
+        <li>Contains: personal info, travel plans, accommodation</li>
+        <li>Or fill paper form at immigration</li>
+      </ul>
+      <a href="https://s.nia.gov.cn/ArrivalCardFillingPC/" target="_blank" rel="noopener" class="map-link" style="margin-top:10px;">&#x1F4DD; Fill Online</a>
+    </div>
+
+    <div class="prep-card status-action">
+      <h3>&#x1F6E1;&#xFE0F; Travel Insurance</h3>
+      <p><strong>Get insurance that covers high altitude (4,500m+).</strong></p>
+      <ul>
+        <li>Must cover: medical at altitude + emergency evacuation</li>
+        <li>Recommended: World Nomads, AXA Thailand, or Allianz Travel</li>
+        <li>Cost: ~1,500-3,000 THB for 8 days</li>
+        <li>Medical evacuation from remote Yunnan can cost $50,000-300,000 USD without insurance!</li>
+      </ul>
+    </div>
+
+    <div class="prep-card status-info">
+      <h3>&#x2708;&#xFE0F; Flight &mdash; Ruili Airlines</h3>
+      <p><strong>Outbound:</strong> DR5042 BKK &#x2192; LJG, departs 13:50, arrives ~17:40<br>
+      <strong>Return:</strong> DR5041 LJG &#x2192; BKK, departs ~13:00, arrives ~14:45</p>
+      <ul>
+        <li>Checked bag: <strong>23 kg</strong> max</li>
+        <li>Carry-on: <strong>10 kg</strong> max (55&times;40&times;25 cm)</li>
+        <li>&#x26A0;&#xFE0F; <strong>No online check-in!</strong> Must check in at airport counter</li>
+        <li>Check-in opens 2 hours before departure</li>
+      </ul>
+    </div>
+
+    <div class="prep-card status-action">
+      <h3>&#x1F4F1; Apps to Download</h3>
+      <p><strong>DO ALL OF THIS BEFORE LEAVING THAILAND!</strong></p>
+      <ul>
+        <li><strong>WeChat</strong> &mdash; messaging + payments (link Visa/MC for WeChat Pay)</li>
+        <li><strong>Alipay</strong> &mdash; payments (International Version, link Visa/MC)</li>
+        <li><strong>Didi</strong> &mdash; taxi/ride-hailing (DiDi Chuxing app)</li>
+        <li><strong>Amap</strong> &mdash; maps (MUCH better than Google Maps in China)</li>
+        <li><strong>Trip.com</strong> &mdash; for booking train tickets</li>
+        <li><strong>Google Translate</strong> &mdash; download offline Chinese pack!</li>
+      </ul>
+      <p style="margin-top:8px;color:rgba(255,255,255,0.45);font-size:13px;">See the detailed <a href="#apps-section" style="color:#60a5fa;">Apps &amp; Connectivity</a> section below for step-by-step setup.</p>
+    </div>
+
+    <div class="prep-card status-action">
+      <h3>&#x1F4F6; SIM / eSIM</h3>
+      <p><strong>Recommended: eSIM with built-in firewall bypass</strong></p>
+      <ul>
+        <li><strong>Holafly</strong> &mdash; Unlimited 8-day, ~$32 USD, VPN included &#x2B50;</li>
+        <li><strong>Saily</strong> &mdash; 3-20GB, $4.49-$42.99, VPN included</li>
+        <li><strong>Airalo</strong> &mdash; 5GB/7 days, ~$15 USD, partial VPN</li>
+      </ul>
+      <p style="margin-top:6px;font-size:13px;color:rgba(255,255,255,0.5);">Buy &amp; install BEFORE leaving Thailand. Activate on arrival.</p>
+    </div>
+
+    <div class="prep-card status-warn">
+      <h3>&#x1F510; VPN Setup</h3>
+      <p><strong>Google, Instagram, LINE, WhatsApp are BLOCKED in China.</strong></p>
+      <ul>
+        <li>If using Holafly eSIM, VPN is built-in &mdash; may not need separate VPN</li>
+        <li>Backup VPNs: <strong>ExpressVPN</strong> (~$12.95/mo) or <strong>Surfshark</strong> (~$2.49/mo)</li>
+        <li>&#x26A0;&#xFE0F; <strong>Install VPN app BEFORE entering China</strong> &mdash; can't download in China!</li>
+        <li>Install 2 VPN apps as backup (e.g., ExpressVPN + Surfshark)</li>
+        <li>Test it works while still in Thailand</li>
+      </ul>
+    </div>
+
+    <div class="prep-card status-action">
+      <h3>&#x1F4B0; Currency &amp; Cash</h3>
+      <p><strong>Bring 2,000-3,000 CNY per person</strong> (~9,000-13,500 THB)</p>
+      <ul>
+        <li>1 CNY &#x2248; 4.5 THB (Feb 2026)</li>
+        <li>&#x2B50; Exchange at <strong>SuperRich</strong> in Bangkok (best rate)</li>
+        <li>Bring mix of 100s, 50s, 20s, 10s &mdash; small vendors can't break 100</li>
+        <li>ATMs available in Lijiang &amp; Shangri-La but <strong>sparse/none in Deqin, Feilai Si, Benzilan</strong></li>
+        <li>Withdraw enough before Day 5!</li>
+      </ul>
+    </div>
+
+    <div class="prep-card status-ok">
+      <h3>&#x1F50C; Travel Adapter</h3>
+      <p><strong>Thai 2-prong plugs fit directly into Chinese sockets</strong> &mdash; no adapter needed for most devices! Three-prong plugs need an adapter.</p>
+      <ul>
+        <li>Voltage: China 220V &#x2248; Thailand 230V &mdash; no converter needed</li>
+        <li>Bring 1 universal adapter + 1 multi-port USB charger to share</li>
+      </ul>
+    </div>
+
+    <div class="prep-card status-info">
+      <h3>&#x23F0; Time Zone</h3>
+      <p>China is <strong>UTC+8</strong>, Thailand is <strong>UTC+7</strong> &mdash; China is <strong>1 hour ahead</strong>.</p>
+      <p>All times in this guide are <strong>China local time</strong>. Set phone to auto time zone.</p>
+    </div>
+
+    <div class="prep-card status-info">
+      <h3>&#x1F32A;&#xFE0F; COVID / Health Entry</h3>
+      <p><strong>No requirements.</strong> No testing, no vaccination proof, no quarantine, no health declaration. Just bring your passport!</p>
+    </div>
+
+    <div class="prep-card status-info">
+      <h3>&#x1F4F7; Drone Warning</h3>
+      <p><strong>&#x26A0;&#xFE0F; Leave drone at home.</strong> China has very strict drone regulations. Many scenic areas are no-fly zones. Registration requires Chinese phone number. Not worth the hassle.</p>
+    </div>
+  </div>
+  </div><!-- /collapsible: Before You Go -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- HOTELS SUMMARY                             -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <h2>&#x1F3E8; Hotels Summary</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div style="overflow-x: auto;">
+    <table class="hotel-table">
+      <thead>
+        <tr>
+          <th>Night</th>
+          <th>Hotel</th>
+          <th>Zone</th>
+          <th>Vibe</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Night 1-2</td>
+          <td class="hotel-highlight">Nayun Natural Aesthetic</td>
+          <td>Lijiang Old Town</td>
+          <td>Boutique, shuttle to door</td>
+        </tr>
+        <tr>
+          <td>Night 3-4</td>
+          <td class="hotel-highlight">Bandu Oxygen Supply Homestay</td>
+          <td>Shangri-La, Dukezong</td>
+          <td>Tibetan homestay, oxygen supply</td>
+        </tr>
+        <tr>
+          <td>Night 5</td>
+          <td class="hotel-highlight">Guanjing Tiantang Hotel</td>
+          <td>Feilai Si</td>
+          <td>Mountain view room, sunrise spot</td>
+        </tr>
+        <tr>
+          <td>Night 6</td>
+          <td class="hotel-highlight">LUX* Tea Horse Road</td>
+          <td>Benzilan</td>
+          <td>World-class luxury resort</td>
+        </tr>
+        <tr>
+          <td>Night 7</td>
+          <td class="hotel-highlight">Pullman Lijiang Resort</td>
+          <td>Shuhe Ancient Town</td>
+          <td>3-bedroom villa!</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div><!-- /collapsible: Hotels Summary -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- WEATHER & WHAT TO WEAR                     -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <h2>&#x1F321;&#xFE0F; Weather & What to Wear</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="weather-grid">
+    <div class="weather-card">
+      <div class="zone-name">&#x26F0;&#xFE0F; Mountain Zone (4,000m+)</div>
+      <div class="zone-alt">Jade Dragon Summit, Baima Pass</div>
+      <div class="zone-temp"><strong>-10 to -5&#xB0;C</strong> &mdash; Freezing! Full winter survival gear</div>
+      <div class="zone-clothes">Heavy down jacket, thermal base layer, fleece mid-layer, waterproof outer shell, insulated gloves, warm beanie/hat, thick hiking socks, snow-proof boots</div>
+    </div>
+    <div class="weather-card">
+      <div class="zone-name">&#x1F3D4;&#xFE0F; High Altitude Cold (3,000-3,400m)</div>
+      <div class="zone-alt">Shangri-La, Deqin/Feilai Si</div>
+      <div class="zone-temp">Day <strong>3-12&#xB0;C</strong>, Night <strong>-8 to 0&#xB0;C</strong> &mdash; Cold! Heavy coat needed</div>
+      <div class="zone-clothes">Down jacket or heavy puffer, thermal underwear, wool sweater, scarf/neck warmer, warm pants (not jeans), closed-toe warm boots</div>
+    </div>
+    <div class="weather-card">
+      <div class="zone-name">&#x1F3EF; Mid Altitude (2,000-2,400m)</div>
+      <div class="zone-alt">Lijiang, Benzilan</div>
+      <div class="zone-temp">Day <strong>12-20&#xB0;C</strong>, Night <strong>0-10&#xB0;C</strong> &mdash; Cool and pleasant, jacket for evening</div>
+      <div class="zone-clothes">Light down jacket or warm fleece, long-sleeve shirts, jeans or casual pants, sneakers or light boots, light scarf</div>
+    </div>
+    <div class="weather-card" style="border-color: rgba(251,191,36,0.2); background: rgba(251,191,36,0.04);">
+      <div class="zone-name" style="color: #fbbf24;">&#x2600;&#xFE0F; UV Warning - All Zones</div>
+      <div class="zone-alt">Altitude = Stronger UV everywhere</div>
+      <div class="zone-temp"><strong>UV is EXTREMELY strong</strong> at altitude &mdash; sunburn in 15 minutes even on cloudy days</div>
+      <div class="zone-clothes">Sunscreen SPF 50+ (reapply every 2 hours), UV-blocking sunglasses (essential!), wide-brim hat or cap, lip balm with SPF, moisturizer (very dry air)</div>
+    </div>
+  </div>
+
+  <p style="text-align: center; margin-top: 20px; color: rgba(255,255,255,0.35); font-size: 14px;"><strong style="color: rgba(255,255,255,0.5);">Key insight:</strong> Layers are everything! You'll go from -10&#xB0;C (Jade Dragon summit) to 20&#xB0;C (Benzilan) across this trip.</p>
+  </div><!-- /collapsible: Weather -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- TRAVEL TIPS                                -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <h2>&#x1F4A1; Travel Tips</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-num">01</div>
+      <div class="tip-content">
+        <div class="tip-title">Altitude Sickness</div>
+        <div class="tip-text">Walk slowly, drink lots of warm water, avoid alcohol for the first 2 days, don't shower on arrival night. If you feel headache/nausea, use canned oxygen and rest.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">02</div>
+      <div class="tip-content">
+        <div class="tip-title">Essential Apps</div>
+        <div class="tip-text">Download <strong>Didi</strong> (taxi), <strong>Amap/Gaode Maps</strong> (Google Maps is unreliable in China), <strong>WeChat Pay</strong> (many places don't take cards).</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">03</div>
+      <div class="tip-content">
+        <div class="tip-title">Cash is King</div>
+        <div class="tip-text">Bring Chinese Yuan! Many small shops, markets, and street vendors are cash-only. ATMs available in Lijiang and Shangri-La but sparse in Deqin/Benzilan.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">04</div>
+      <div class="tip-content">
+        <div class="tip-title">Canned Oxygen</div>
+        <div class="tip-text">Buy at Lijiang 7-Eleven or pharmacy. Bring <strong>2-3 cans</strong> for the Jade Dragon mountain day. Available everywhere in tourist areas but cheaper in town.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">05</div>
+      <div class="tip-content">
+        <div class="tip-title">Motion Sickness</div>
+        <div class="tip-text">Take pills <strong>30 min before</strong> driving on Day 3 (Tiger Leaping Gorge) and Day 5 (Deqin). The mountain roads are extremely winding.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">06</div>
+      <div class="tip-content">
+        <div class="tip-title">Photography Gold</div>
+        <div class="tip-text">The <strong>golden sunrise at Feilai Si</strong> is the trip's crown jewel. Charge your camera the night before! Also: Blue Moon Valley and Black Dragon Pool are incredible photo spots.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">07</div>
+      <div class="tip-content">
+        <div class="tip-title">Must-Try Food</div>
+        <div class="tip-text"><strong>Yak meat hotpot</strong> in Shangri-La, <strong>Crossing the Bridge Noodles</strong> in Lijiang, <strong>Tibetan butter tea</strong>, and <strong>fresh salmon</strong> at the farewell dinner.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">08</div>
+      <div class="tip-content">
+        <div class="tip-title">Dress in Layers</div>
+        <div class="tip-text">Temperature swings from <strong>-10&#xB0;C</strong> (mountain summit) to <strong>20&#xB0;C</strong> (Benzilan afternoon) across the trip. Layers you can add/remove are essential.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">09</div>
+      <div class="tip-content">
+        <div class="tip-title">UV Protection</div>
+        <div class="tip-text">Higher altitude = stronger UV. Apply sunscreen SPF 50+ and wear sunglasses <strong>every single day</strong>, even on cloudy days. You can burn in 15 minutes at 4,000m+.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">10</div>
+      <div class="tip-content">
+        <div class="tip-title">Communication</div>
+        <div class="tip-text">Get a <strong>local SIM or eSIM</strong> for China. You'll need a <strong>VPN</strong> if you want access to Google, Instagram, Line, or WhatsApp. Download everything offline before arrival.</div>
+      </div>
+    </div>
+  </div>
+  </div><!-- /collapsible: Travel Tips -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- BUDGET REFERENCE                           -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <h2>&#x1F4B0; Budget Quick Reference</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div style="overflow-x: auto;">
+    <table class="budget-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Estimated Cost</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Canned Oxygen</td>
+          <td class="price">~10-20 CNY each</td>
+          <td>Buy 2-3 cans for mountain day</td>
+        </tr>
+        <tr>
+          <td>Jade Dragon Cable Car</td>
+          <td class="price">~120 CNY</td>
+          <td>Big Cable Car to Glacier Park</td>
+        </tr>
+        <tr>
+          <td>Tiger Leaping Gorge Entry</td>
+          <td class="price">~65 CNY</td>
+          <td>Walk down to rapids point</td>
+        </tr>
+        <tr>
+          <td>Songzanlin Monastery Entry</td>
+          <td class="price">~90 CNY</td>
+          <td>Includes shuttle bus</td>
+        </tr>
+        <tr>
+          <td>Potatso National Park Entry</td>
+          <td class="price">~100 CNY</td>
+          <td>Includes park shuttle</td>
+        </tr>
+        <tr>
+          <td>Napa Lake Horse Riding</td>
+          <td class="price">~50-100 CNY</td>
+          <td>Negotiate price</td>
+        </tr>
+        <tr>
+          <td>Didi Taxi (in-city)</td>
+          <td class="price">~15-30 CNY</td>
+          <td>Short trips within Lijiang/Shangri-La</td>
+        </tr>
+        <tr>
+          <td>Meals (per person)</td>
+          <td class="price">~40-80 CNY</td>
+          <td>Local restaurants, more at LUX*</td>
+        </tr>
+        <tr>
+          <td>High-Speed Train (Shangri-La &rarr; Lijiang)</td>
+          <td class="price">~60-90 CNY</td>
+          <td>1h 10min, comfortable</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="margin-top: 16px; color: rgba(255,255,255,0.35); font-size: 13px; text-align: center;">* Prices are approximate and may vary. 1 CNY ~ 5 THB (Feb 2026)</p>
+  </div><!-- /collapsible: Budget -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- KEY PLACES                                 -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <h2>&#x1F4CD; Key Places</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="map-section">
+    <h3>&#x1F4CD; Key Places - Google Maps + Baidu Maps (&#x1F1E8;&#x1F1F3; for use in China)</h3>
+    <div class="places-grid">
+      <div class="place-card">
+        <div class="place-icon">&#x1F3EF;</div>
+        <div class="place-name">Lijiang Old Town</div>
+        <div class="place-detail">UNESCO Heritage, Naxi culture</div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Lijiang+Old+Town" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E4%B8%BD%E6%B1%9F%E5%8F%A4%E5%9F%8E" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E4%B8%BD%E6%B1%9F%E5%8F%A4%E5%9F%8E" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
+      </div>
+      <div class="place-card">
+        <div class="place-icon">&#x1F3D4;&#xFE0F;</div>
+        <div class="place-name">Jade Dragon Snow Mountain</div>
+        <div class="place-detail">4,506m summit, Glacier Park</div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Jade+Dragon+Snow+Mountain+Glacier+Park" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E7%8E%89%E9%BE%99%E9%9B%AA%E5%B1%B1%E5%86%B0%E5%B7%9D%E5%85%AC%E5%9B%AD" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E7%8E%89%E9%BE%99%E9%9B%AA%E5%B1%B1%E5%86%B0%E5%B7%9D%E5%85%AC%E5%9B%AD" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
+      </div>
+      <div class="place-card">
+        <div class="place-icon">&#x1F4A7;</div>
+        <div class="place-name">Blue Moon Valley</div>
+        <div class="place-detail">Turquoise glacial meltwater</div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Blue+Moon+Valley+Lijiang" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E8%93%9D%E6%9C%88%E8%B0%B7+%E4%B8%BD%E6%B1%9F" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E8%93%9D%E6%9C%88%E8%B0%B7%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
+      </div>
+      <div class="place-card">
+        <div class="place-icon">&#x1F303;</div>
+        <div class="place-name">Black Dragon Pool</div>
+        <div class="place-detail">Iconic mountain reflection</div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Black+Dragon+Pool+Lijiang" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E9%BB%91%E9%BE%99%E6%BD%AD+%E4%B8%BD%E6%B1%9F" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E9%BB%91%E9%BE%99%E6%BD%AD%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
+      </div>
+      <div class="place-card">
+        <div class="place-icon">&#x1F30A;</div>
+        <div class="place-name">Tiger Leaping Gorge</div>
+        <div class="place-detail">World's deepest gorge</div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Tiger+Leaping+Gorge+Lijiang" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E8%99%8E%E8%B7%B3%E5%B3%A1" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E8%99%8E%E8%B7%B3%E5%B3%A1" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
+      </div>
+      <div class="place-card">
+        <div class="place-icon">&#x1F3DB;&#xFE0F;</div>
+        <div class="place-name">Songzanlin Monastery</div>
+        <div class="place-detail">"Little Potala" of Yunnan</div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Songzanlin+Monastery+Shangri-La" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E6%9D%BE%E8%B5%9E%E6%9E%97%E5%AF%BA+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E6%9D%BE%E8%B5%9E%E6%9E%97%E5%AF%BA%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
+      </div>
+      <div class="place-card">
+        <div class="place-icon">&#x1F40E;</div>
+        <div class="place-name">Napa Lake</div>
+        <div class="place-detail">Horse riding, grasslands</div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Napa+Lake+Shangri-La" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E7%BA%B3%E5%B8%95%E6%B5%B7+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E7%BA%B3%E5%B8%95%E6%B5%B7%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
+      </div>
+      <div class="place-card">
+        <div class="place-icon">&#x1F6D5;</div>
+        <div class="place-name">Dukezong + Prayer Wheel</div>
+        <div class="place-detail">Ancient Tibetan town, giant wheel</div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Dukezong+Old+Town+Shangri-La" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E7%8B%AC%E5%85%8B%E5%AE%97%E5%8F%A4%E5%9F%8E+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E7%8B%AC%E5%85%8B%E5%AE%97%E5%8F%A4%E5%9F%8E%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
+      </div>
+      <div class="place-card">
+        <div class="place-icon">&#x1F305;</div>
+        <div class="place-name">Feilai Si Viewpoint</div>
+        <div class="place-detail">Meili Snow Mountain sunrise</div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Feilai+Si+Meili+Snow+Mountain+Viewpoint" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E9%A3%9E%E6%9D%A5%E5%AF%BA+%E6%A2%85%E9%87%8C%E9%9B%AA%E5%B1%B1" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E9%A3%9E%E6%9D%A5%E5%AF%BA%2B%E6%A2%85%E9%87%8C%E9%9B%AA%E5%B1%B1" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
+      </div>
+      <div class="place-card">
+        <div class="place-icon">&#x1F9CA;</div>
+        <div class="place-name">Mingyong Glacier</div>
+        <div class="place-detail">Sacred glacier, lowest-latitude</div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Mingyong+Glacier+Deqin" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E6%98%8E%E6%B0%B8%E5%86%B0%E5%B7%9D+%E5%BE%B7%E9%92%A6" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E6%98%8E%E6%B0%B8%E5%86%B0%E5%B7%9D%2B%E5%BE%B7%E9%92%A6" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
+      </div>
+      <div class="place-card">
+        <div class="place-icon">&#x1F332;</div>
+        <div class="place-name">Potatso National Park</div>
+        <div class="place-detail">Lake Shudu, boardwalks</div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Potatso+National+Park+Shangri-La" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E6%99%AE%E8%BE%BE%E6%8E%AA%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E6%99%AE%E8%BE%BE%E6%8E%AA%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
+      </div>
+      <div class="place-card">
+        <div class="place-icon">&#x1F3E0;</div>
+        <div class="place-name">Shuhe Ancient Town</div>
+        <div class="place-detail">Quieter sister of Lijiang</div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Shuhe+Ancient+Town+Lijiang" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E6%9D%9F%E6%B2%B3%E5%8F%A4%E9%95%87+%E4%B8%BD%E6%B1%9F" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E6%9D%9F%E6%B2%B3%E5%8F%A4%E9%95%87%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
+      </div>
+    </div>
+  </div>
+  </div><!-- /collapsible: Key Places -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- PACKING CHECKLIST                          -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <h2>&#x1F392; Packing Checklist</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="lists-grid">
+    <div class="list-box">
+      <h3>&#x1F4CB; Essentials</h3>
+      <ul>
+        <li>Passport + copies</li>
+        <li>Chinese Yuan (cash for markets)</li>
+        <li>Phone charger + power bank (10,000mAh+)</li>
+        <li>Travel adapter (China Type A/I)</li>
+        <li>Offline maps (Amap/Gaode - not Google!)</li>
+        <li>China SIM card or eSIM</li>
+        <li>VPN app (for Google/Instagram/Line)</li>
+      </ul>
+    </div>
+    <div class="list-box">
+      <h3>&#x1F9E5; Cold Weather Gear</h3>
+      <ul>
+        <li>Heavy down jacket (for mountains)</li>
+        <li>Thermal base layers (top + bottom)</li>
+        <li>Fleece / wool sweater</li>
+        <li>Warm pants / hiking pants</li>
+        <li>Insulated gloves</li>
+        <li>Warm beanie / hat</li>
+        <li>Scarf / neck warmer</li>
+        <li>Thick warm socks (3-4 pairs)</li>
+        <li>Waterproof hiking boots / snow boots</li>
+      </ul>
+    </div>
+    <div class="list-box">
+      <h3>&#x1F3E5; Health & Altitude</h3>
+      <ul>
+        <li>Canned oxygen (buy at Lijiang)</li>
+        <li>Altitude sickness pills (Diamox - consult doctor)</li>
+        <li>Chocolate / energy bars (mountain day)</li>
+        <li>Motion sickness pills (windy roads!)</li>
+        <li>Basic medicine kit</li>
+        <li>Sunscreen SPF 50+ (UV very strong)</li>
+        <li>Lip balm with SPF</li>
+        <li>Moisturizer (air is very dry)</li>
+      </ul>
+    </div>
+    <div class="list-box">
+      <h3>&#x1F576;&#xFE0F; Sun & Eye Protection</h3>
+      <ul>
+        <li>UV-blocking sunglasses (essential!)</li>
+        <li>Wide-brim hat or cap</li>
+        <li>Sunscreen SPF 50+ (reapply often)</li>
+        <li>UV face shield / buff (optional)</li>
+      </ul>
+    </div>
+    <div class="list-box">
+      <h3>&#x1F50B; Electronics</h3>
+      <ul>
+        <li>Phone + charger</li>
+        <li>Power bank (10,000mAh+)</li>
+        <li>Camera + extra battery (for sunrise!)</li>
+        <li>China SIM card or VPN</li>
+        <li>Download Didi app (for taxis)</li>
+        <li>Download WeChat (for payments)</li>
+      </ul>
+    </div>
+    <div class="list-box">
+      <h3>&#x1F392; Other</h3>
+      <ul>
+        <li>Small daypack backpack</li>
+        <li>Reusable water bottle</li>
+        <li>Snacks for long drives</li>
+        <li>Travel pillow (long car rides)</li>
+        <li>Wet wipes / tissues</li>
+        <li>Ziplock bags (for phone in snow)</li>
+      </ul>
+    </div>
+  </div>
+  </div><!-- /collapsible: Packing Checklist -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- HEALTH & SAFETY                            -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <h2>&#x1F3E5; Health &amp; Safety</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <h3 style="font-family:'Kanit',sans-serif;font-size:18px;font-weight:600;color:#f87171;margin-bottom:16px;">&#x26F0;&#xFE0F; Altitude Profile &amp; Risk Levels</h3>
+
+  <div style="overflow-x:auto;">
+    <table class="altitude-table">
+      <thead>
+        <tr><th>Day</th><th>Location</th><th>Altitude</th><th>Risk</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Lijiang</td><td>2,400m</td><td class="risk-low">LOW</td></tr>
+        <tr><td>2</td><td>Jade Dragon Summit</td><td>4,506m</td><td class="risk-high">&#x26A0;&#xFE0F; HIGH &mdash; highest point!</td></tr>
+        <tr><td>3</td><td>Tiger Leaping Gorge</td><td>2,600m</td><td class="risk-low">LOW</td></tr>
+        <tr><td>3-4</td><td>Shangri-La</td><td>3,200m</td><td class="risk-moderate">MODERATE</td></tr>
+        <tr><td>5</td><td>Baima Pass</td><td>4,292m</td><td class="risk-high">&#x26A0;&#xFE0F; HIGH &mdash; brief</td></tr>
+        <tr><td>5</td><td>Feilai Si</td><td>3,400m</td><td class="risk-moderate">MODERATE</td></tr>
+        <tr><td>6</td><td>Benzilan</td><td>2,000m</td><td class="risk-low">LOW &mdash; relief!</td></tr>
+        <tr><td>7</td><td>Potatso</td><td>3,500m</td><td class="risk-moderate">MODERATE</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tips-grid" style="margin-top:20px;">
+    <div class="tip-card" style="border-color:rgba(74,222,128,0.2);">
+      <div class="tip-num" style="color:rgba(74,222,128,0.4);">&#x1F7E2;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#4ade80;">Mild Symptoms (Common)</div>
+        <div class="tip-text">Headache, slight nausea, fatigue, dizziness, shortness of breath. <strong>Action:</strong> Rest, warm water, canned oxygen, ibuprofen/paracetamol. Walk slowly. NO alcohol. Usually passes in 24 hours.</div>
+      </div>
+    </div>
+    <div class="tip-card" style="border-color:rgba(251,191,36,0.2);">
+      <div class="tip-num" style="color:rgba(251,191,36,0.4);">&#x1F7E1;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#fbbf24;">Moderate Symptoms (Concerning)</div>
+        <div class="tip-text">Strong persistent headache, vomiting, can't sleep, rapid heartbeat. <strong>Action:</strong> Stop activity, continuous oxygen, consider Diamox, drink water. If no improvement in 4-6 hours, descend.</div>
+      </div>
+    </div>
+    <div class="tip-card" style="border-color:rgba(248,113,113,0.3);">
+      <div class="tip-num" style="color:rgba(248,113,113,0.5);">&#x1F534;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#f87171;">Severe &mdash; EMERGENCY &#x26A0;&#xFE0F;</div>
+        <div class="tip-text">Confusion, can't walk straight, blue/grey lips, persistent coughing at rest. <strong>This is LIFE-THREATENING.</strong> Call 120 immediately. Begin immediate descent. Keep warm, continuous oxygen. DO NOT WAIT.</div>
+      </div>
+    </div>
+    <div class="tip-card" style="border-color:rgba(147,197,253,0.2);">
+      <div class="tip-num" style="color:rgba(147,197,253,0.4);">&#x1F48A;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#93c5fd;">Diamox (Acetazolamide)</div>
+        <div class="tip-text">Prescription needed from travel clinic. <strong>125mg twice daily</strong>, start 24 hours before altitude. Side effects: tingling fingers/toes (normal), increased urination. DO NOT take if allergic to sulfa drugs.</div>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Kanit',sans-serif;font-size:18px;font-weight:600;color:#fbbf24;margin:32px 0 16px;">&#x1F48A; Travel Pharmacy Checklist</h3>
+
+  <div class="lists-grid">
+    <div class="list-box">
+      <h3>&#x26F0;&#xFE0F; Altitude</h3>
+      <ul>
+        <li>Diamox (acetazolamide) 125mg &mdash; prescription</li>
+        <li>Rhodiola rosea (&#x7EA2;&#x666F;&#x5929;) &mdash; OTC in Chinese pharmacies</li>
+        <li>Ibuprofen 400mg &mdash; altitude headache</li>
+      </ul>
+    </div>
+    <div class="list-box">
+      <h3>&#x1F912; Pain / Stomach</h3>
+      <ul>
+        <li>Paracetamol 500mg</li>
+        <li>Imodium (loperamide)</li>
+        <li>Electrolyte sachets (ORS)</li>
+        <li>Antacids</li>
+      </ul>
+    </div>
+    <div class="list-box">
+      <h3>&#x1F697; Motion / Allergy</h3>
+      <ul>
+        <li>Dramamine (take 30 min before driving!)</li>
+        <li>Ginger candy (natural alternative)</li>
+        <li>Antihistamine (cetirizine / loratadine)</li>
+        <li>EpiPen if applicable</li>
+      </ul>
+    </div>
+    <div class="list-box">
+      <h3>&#x1FA79; First Aid</h3>
+      <ul>
+        <li>Band-aids / adhesive bandages</li>
+        <li>Antiseptic cream (Betadine)</li>
+        <li>Throat lozenges / cough drops</li>
+        <li>Sunscreen SPF50+ (bring 2 tubes!)</li>
+        <li>Lip balm SPF30+</li>
+        <li>Moisturizer (air extremely dry)</li>
+        <li>Aloe vera gel (for sunburn)</li>
+      </ul>
+    </div>
+  </div>
+
+  <p style="margin-top:14px;color:rgba(255,255,255,0.4);font-size:13px;">&#x1F4A1; Keep all medicines in original packaging. Pharmacies in Lijiang &amp; Shangri-La (look for &#x1F7E2; green cross). Very limited in Deqin/Benzilan. Chinese pharmacy = &#x836F;&#x5E97; (y&agrave;odi&agrave;n).</p>
+
+  <h3 style="font-family:'Kanit',sans-serif;font-size:18px;font-weight:600;color:#34d399;margin:32px 0 16px;">&#x1F3E5; Nearest Hospitals</h3>
+
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-num">&#x1F3EF;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#34d399;">Lijiang</div>
+        <div class="tip-text"><strong>Lijiang People's Hospital</strong> (&#x4E3D;&#x6C5F;&#x5E02;&#x4EBA;&#x6C11;&#x533B;&#x9662;) &mdash; ~15 min from Old Town. Largest hospital in Lijiang.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">&#x1F6D5;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#34d399;">Shangri-La</div>
+        <div class="tip-text"><strong>Shangri-La People's Hospital</strong> (&#x9999;&#x683C;&#x91CC;&#x62C9;&#x5E02;&#x4EBA;&#x6C11;&#x533B;&#x9662;) &mdash; modern standards. In the city center.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">&#x1F3D4;&#xFE0F;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#fbbf24;">Deqin / Feilai Si</div>
+        <div class="tip-text"><strong>Limited!</strong> Basic clinic in Deqin town (~30 min from Feilai Si). Serious issues &#x2192; Shangri-La or Kunming.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">&#x2728;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#fbbf24;">Benzilan</div>
+        <div class="tip-text"><strong>Very limited.</strong> LUX* has basic first aid. Nearest hospital: Shangri-La (~2 hours drive).</div>
+      </div>
+    </div>
+  </div>
+
+  <p style="margin-top:14px;color:rgba(255,255,255,0.4);font-size:13px;">&#x1F4A1; Hospitals may require cash upfront. Bring insurance card. Show symptoms via Google Translate.</p>
+
+  <h3 style="font-family:'Kanit',sans-serif;font-size:18px;font-weight:600;color:#fb923c;margin:32px 0 16px;">&#x1F6BD; Toilet Survival Guide</h3>
+
+  <div class="tips-grid">
+    <div class="tip-card" style="border-color:rgba(248,113,113,0.2);">
+      <div class="tip-num" style="color:rgba(248,113,113,0.3);">!</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#f87171;">Golden Rules</div>
+        <div class="tip-text"><strong>ALWAYS carry tissues/toilet paper</strong> &mdash; most public restrooms don't provide it! Bring wet wipes and hand sanitizer. Many toilets are squat-style at scenic spots. Paper goes in trash bin beside toilet, NOT flushed.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">&#x1F4A1;</div>
+      <div class="tip-content">
+        <div class="tip-title">Pro Tip</div>
+        <div class="tip-text"><strong>Use the hotel bathroom BEFORE departing each morning.</strong> Don't wait until you "need" to go on mountain roads. Rest stop toilets are basic squat-style. Hotels are always western-style with amenities.</div>
+      </div>
+    </div>
+  </div>
+  </div><!-- /collapsible: Health & Safety -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- FOOD GUIDE                                 -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <h2>&#x1F35C; Food Guide</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <h3 style="font-family:'Kanit',sans-serif;font-size:18px;font-weight:600;color:#fb923c;margin-bottom:16px;">&#x2B50; Restaurant Recommendations</h3>
+
+  <div class="restaurant-grid">
+    <a class="resto-card" href="https://www.google.com/maps/search/?api=1&query=Yunnan+Mengzi+Crossing+Bridge+Rice+Noodles+Lijiang" target="_blank" rel="noopener">
+      <div class="resto-name">&#x1F35C; Yunnan Mengzi Noodles</div>
+      <div class="resto-detail">Day 1 &mdash; Crossing the Bridge Rice Noodles near Nayun Hotel. ~25 CNY/person. Yishang Street, Old Town.</div>
+    </a>
+    <a class="resto-card" href="https://www.google.com/maps/search/?api=1&query=Muwang+Yanyu+Wild+Mushroom+Hot+Pot+Lijiang" target="_blank" rel="noopener">
+      <div class="resto-name">&#x1F344; Muwang Yanyu Mushroom Hotpot</div>
+      <div class="resto-detail">Day 2 &mdash; Famous wild mushroom hotpot. 80-120 CNY/person. No. 16 Yinyu Alley, Lijiang.</div>
+    </a>
+    <a class="resto-card" href="https://www.google.com/maps/search/?api=1&query=Yin+Tong+Yak+Hotpot+Dukezong+Shangri-La" target="_blank" rel="noopener">
+      <div class="resto-name">&#x1F404; Yin Tong Yak Hotpot</div>
+      <div class="resto-detail">Day 3 &mdash; Famous yak rib hotpot + butter tea in Dukezong Old Town. 60-100 CNY/person.</div>
+    </a>
+    <a class="resto-card" href="https://www.google.com/maps/search/?api=1&query=Dreamer+Salmon+Restaurant+Lijiang" target="_blank" rel="noopener">
+      <div class="resto-name">&#x1F41F; Dreamer Salmon &#x4E00;&#x68A6;&#x4E09;&#x6587;&#x9C7C;</div>
+      <div class="resto-detail">Day 7 &mdash; "If you haven't eaten here, you haven't been to Lijiang." Multiple salmon dishes. 80-150 CNY/person.</div>
+    </a>
+  </div>
+
+  <h3 style="font-family:'Kanit',sans-serif;font-size:18px;font-weight:600;color:#fb923c;margin:32px 0 16px;">&#x1F37D;&#xFE0F; Must-Try Dishes by Location</h3>
+
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-num">&#x1F3EF;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#fb923c;">Lijiang</div>
+        <div class="tip-text"><strong>Crossing the Bridge Noodles</strong> (&#x8FC7;&#x6865;&#x7C73;&#x7EBF;) &mdash; Yunnan's most famous dish! Rich broth + fresh ingredients you add. Also try <strong>wild mushroom hotpot</strong> (&#x91CE;&#x751F;&#x83CC;&#x706B;&#x9505;) and <strong>Lijiang Baba</strong> flatbread.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">&#x1F6D5;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#fb923c;">Shangri-La</div>
+        <div class="tip-text"><strong>Yak meat hotpot</strong> (&#x724C;&#x725B;&#x8089;&#x706B;&#x9505;) &mdash; quintessential Tibetan dining! Also: <strong>Tibetan butter tea</strong> (&#x9165;&#x6CB9;&#x8336;), <strong>Tibetan yogurt</strong> (thick &amp; tangy from street vendors), and <strong>barley cakes</strong> (&#x7CCC;&#x7C91;).</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">&#x1F41F;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#fb923c;">Farewell Night</div>
+        <div class="tip-text"><strong>Fresh salmon</strong> &mdash; Yunnan is famous for freshwater salmon! Multiple preparations at Dreamer Salmon restaurant. Also consider <strong>Yunnan coffee</strong> (China's coffee region!).</div>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Kanit',sans-serif;font-size:18px;font-weight:600;color:#f87171;margin:32px 0 16px;">&#x26A0;&#xFE0F; Dietary Restrictions &amp; Allergies</h3>
+
+  <div class="prep-grid">
+    <div class="prep-card status-info">
+      <h3>&#x1F957; Dietary Phrases</h3>
+      <ul>
+        <li><strong>I'm vegetarian</strong> = &#x6211;&#x5403;&#x7D20; (w&#x1D2;  ch&#x12B; s&ugrave;)</li>
+        <li><strong>No spice</strong> = &#x4E0D;&#x8981;&#x8FA3; (b&uacute; y&agrave;o l&agrave;)</li>
+        <li><strong>No pork</strong> = &#x4E0D;&#x8981;&#x732A;&#x8089; (b&uacute; y&agrave;o zh&#x16B;r&ograve;u)</li>
+        <li><strong>No MSG</strong> = &#x6211;&#x4E0D;&#x80FD;&#x5403;&#x5473;&#x7CBE; (w&#x1D2; b&ugrave; n&eacute;ng ch&#x12B; w&egrave;ij&#x12B;ng)</li>
+      </ul>
+    </div>
+    <div class="prep-card status-warn">
+      <h3>&#x26A0;&#xFE0F; Allergy Phrases (Screenshot These!)</h3>
+      <ul>
+        <li><strong>Allergic to peanuts</strong> = &#x6211;&#x5BF9;&#x82B1;&#x751F;&#x8FC7;&#x654F;</li>
+        <li><strong>Allergic to shellfish</strong> = &#x6211;&#x5BF9;&#x6D77;&#x9C9C;&#x8FC7;&#x654F;</li>
+        <li><strong>Allergic to eggs</strong> = &#x6211;&#x5BF9;&#x9E21;&#x86CB;&#x8FC7;&#x654F;</li>
+        <li><strong>Allergic to milk</strong> = &#x6211;&#x5BF9;&#x725B;&#x5976;&#x8FC7;&#x654F;</li>
+        <li><strong>Allergic to gluten</strong> = &#x6211;&#x5BF9;&#x9EB8;&#x8D28;&#x8FC7;&#x654F;</li>
+      </ul>
+    </div>
+    <div class="prep-card status-warn">
+      <h3>&#x1F4A7; Water Safety</h3>
+      <ul>
+        <li>&#x26A0;&#xFE0F; <strong>NEVER drink tap water in China</strong></li>
+        <li>Bottled water everywhere, 2-3 CNY/bottle</li>
+        <li>Use bottled water for brushing teeth to be safe</li>
+        <li>Hotels provide electric kettle / hot water thermos</li>
+        <li>Buy pack of 12 bottles at Lijiang supermarket for the trip</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Kanit',sans-serif;font-size:18px;font-weight:600;color:#fbbf24;margin:32px 0 16px;">&#x1F37D;&#xFE0F; Dining Etiquette</h3>
+  <div class="tip-card" style="border:none;padding:0;">
+    <div class="tip-content">
+      <div class="tip-text">
+        <strong>Shared dishes</strong> placed on rotating lazy Susan. Order 1 dish per person + soup + rice. Say <strong>"&#x4E70;&#x5355;"</strong> (m&#x1CE;id&#x101;n) for the bill. Pay at cashier/counter (not table) &mdash; scan QR code or cash. <strong>No tipping</strong> at restaurants (can be considered rude). Don't stick chopsticks upright in rice (resembles funeral incense). Private driver tip: 50-100 CNY/day at end of service.
+      </div>
+    </div>
+  </div>
+  </div><!-- /collapsible: Food Guide -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- CHINESE SURVIVAL PHRASES                   -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <h2>&#x1F4AC; Chinese Survival Phrases</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <h3 style="font-family:'Kanit',sans-serif;font-size:16px;font-weight:600;color:#fbbf24;margin-bottom:12px;">Basics</h3>
+  <div style="overflow-x:auto;">
+    <table class="phrase-table">
+      <thead><tr><th>English</th><th>Pinyin</th><th>Chinese</th></tr></thead>
+      <tbody>
+        <tr><td>Hello</td><td class="pinyin">N&#x1D0; h&#x1CE;o</td><td class="chinese">&#x4F60;&#x597D;</td></tr>
+        <tr><td>Thank you</td><td class="pinyin">Xi&egrave;xi&egrave;</td><td class="chinese">&#x8C22;&#x8C22;</td></tr>
+        <tr><td>Sorry / Excuse me</td><td class="pinyin">Du&igrave;buq&#x1D0;</td><td class="chinese">&#x5BF9;&#x4E0D;&#x8D77;</td></tr>
+        <tr><td>Yes / No</td><td class="pinyin">Sh&igrave; de / B&uacute; sh&igrave;</td><td class="chinese">&#x662F;&#x7684; / &#x4E0D;&#x662F;</td></tr>
+        <tr><td>OK</td><td class="pinyin">H&#x1CE;o de</td><td class="chinese">&#x597D;&#x7684;</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="font-family:'Kanit',sans-serif;font-size:16px;font-weight:600;color:#fbbf24;margin:24px 0 12px;">Essential</h3>
+  <div style="overflow-x:auto;">
+    <table class="phrase-table">
+      <thead><tr><th>English</th><th>Pinyin</th><th>Chinese</th></tr></thead>
+      <tbody>
+        <tr><td>How much?</td><td class="pinyin">Du&#x14D;shao qi&aacute;n?</td><td class="chinese">&#x591A;&#x5C11;&#x94B1;&#xFF1F;</td></tr>
+        <tr><td>Too expensive</td><td class="pinyin">T&agrave;i gu&igrave; le</td><td class="chinese">&#x592A;&#x8D35;&#x4E86;</td></tr>
+        <tr><td>Where is the bathroom?</td><td class="pinyin">X&#x1D0;sh&#x1D2;uji&#x101;n z&agrave;i n&#x1CE;r?</td><td class="chinese">&#x6D17;&#x624B;&#x95F4;&#x5728;&#x54EA;&#x513F;&#xFF1F;</td></tr>
+        <tr><td>I don't understand Chinese</td><td class="pinyin">W&#x1D2; b&ugrave; d&#x1D2;ng zh&#x14D;ngw&eacute;n</td><td class="chinese">&#x6211;&#x4E0D;&#x61C2;&#x4E2D;&#x6587;</td></tr>
+        <tr><td>Can I pay by card?</td><td class="pinyin">K&#x11B;y&#x1D0; shu&#x101; k&#x1CE; ma?</td><td class="chinese">&#x53EF;&#x4EE5;&#x5237;&#x5361;&#x5417;&#xFF1F;</td></tr>
+        <tr><td>WeChat Pay</td><td class="pinyin">W&#x113;ix&igrave;n zh&#x12B;f&ugrave;</td><td class="chinese">&#x5FAE;&#x4FE1;&#x652F;&#x4ED8;</td></tr>
+        <tr><td>Check please / Bill</td><td class="pinyin">M&#x1CE;id&#x101;n</td><td class="chinese">&#x4E70;&#x5355;</td></tr>
+        <tr><td>Take me to...</td><td class="pinyin">Q&#x1D0;ng s&ograve;ng w&#x1D2; q&ugrave;...</td><td class="chinese">&#x8BF7;&#x9001;&#x6211;&#x53BB;...</td></tr>
+        <tr><td>Stop here</td><td class="pinyin">T&iacute;ng zh&egrave;r</td><td class="chinese">&#x505C;&#x8FD9;&#x513F;</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="font-family:'Kanit',sans-serif;font-size:16px;font-weight:600;color:#fb923c;margin:24px 0 12px;">Food</h3>
+  <div style="overflow-x:auto;">
+    <table class="phrase-table">
+      <thead><tr><th>English</th><th>Pinyin</th><th>Chinese</th></tr></thead>
+      <tbody>
+        <tr><td>I'm vegetarian</td><td class="pinyin">W&#x1D2; ch&#x12B; s&ugrave;</td><td class="chinese">&#x6211;&#x5403;&#x7D20;</td></tr>
+        <tr><td>No spice please</td><td class="pinyin">B&uacute; y&agrave;o l&agrave;</td><td class="chinese">&#x4E0D;&#x8981;&#x8FA3;</td></tr>
+        <tr><td>No pork</td><td class="pinyin">B&uacute; y&agrave;o zh&#x16B;r&ograve;u</td><td class="chinese">&#x4E0D;&#x8981;&#x732A;&#x8089;</td></tr>
+        <tr><td>Water</td><td class="pinyin">Shu&#x1D0;</td><td class="chinese">&#x6C34;</td></tr>
+        <tr><td>Beer</td><td class="pinyin">P&iacute;ji&#x1D4;</td><td class="chinese">&#x5564;&#x9152;</td></tr>
+        <tr><td>Delicious!</td><td class="pinyin">H&#x1CE;o ch&#x12B;!</td><td class="chinese">&#x597D;&#x5403;&#xFF01;</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="font-family:'Kanit',sans-serif;font-size:16px;font-weight:600;color:#f87171;margin:24px 0 12px;">Emergency</h3>
+  <div style="overflow-x:auto;">
+    <table class="phrase-table">
+      <thead><tr><th>English</th><th>Pinyin</th><th>Chinese</th></tr></thead>
+      <tbody>
+        <tr><td>Help!</td><td class="pinyin">Ji&ugrave;m&igrave;ng!</td><td class="chinese">&#x6551;&#x547D;&#xFF01;</td></tr>
+        <tr><td>I need help</td><td class="pinyin">W&#x1D2; x&#x16B;y&agrave;o b&#x101;ngzh&ugrave;</td><td class="chinese">&#x6211;&#x9700;&#x8981;&#x5E2E;&#x52A9;</td></tr>
+        <tr><td>Please call a doctor</td><td class="pinyin">Q&#x1D0;ng ji&agrave;o y&#x12B;sh&#x113;ng</td><td class="chinese">&#x8BF7;&#x53EB;&#x533B;&#x751F;</td></tr>
+        <tr><td>Hospital</td><td class="pinyin">Y&#x12B;yu&agrave;n</td><td class="chinese">&#x533B;&#x9662;</td></tr>
+        <tr><td>I have altitude sickness</td><td class="pinyin">W&#x1D2; y&#x1D2;u g&#x101;o yu&aacute;n f&#x1CE;ny&igrave;ng</td><td class="chinese">&#x6211;&#x6709;&#x9AD8;&#x539F;&#x53CD;&#x5E94;</td></tr>
+        <tr><td>Call an ambulance</td><td class="pinyin">Q&#x1D0;ng ji&agrave;o ji&ugrave;h&ugrave;ch&#x113;</td><td class="chinese">&#x8BF7;&#x53EB;&#x6551;&#x62A4;&#x8F66;</td></tr>
+        <tr><td>I can't breathe</td><td class="pinyin">W&#x1D2; h&#x16B;x&#x12B; k&ugrave;nn&aacute;n</td><td class="chinese">&#x6211;&#x547C;&#x5438;&#x56F0;&#x96BE;</td></tr>
+        <tr><td>Headache</td><td class="pinyin">T&oacute;ut&eacute;ng</td><td class="chinese">&#x5934;&#x75BC;</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="font-family:'Kanit',sans-serif;font-size:16px;font-weight:600;color:#60a5fa;margin:24px 0 12px;">&#x1F4CD; Directions (Show to Didi driver)</h3>
+  <div style="overflow-x:auto;">
+    <table class="phrase-table">
+      <thead><tr><th>Place</th><th>Chinese Name</th></tr></thead>
+      <tbody>
+        <tr><td>Lijiang Old Town</td><td class="chinese">&#x4E3D;&#x6C5F;&#x53E4;&#x57CE;</td></tr>
+        <tr><td>Lijiang Airport</td><td class="chinese">&#x4E3D;&#x6C5F;&#x4E09;&#x4E49;&#x673A;&#x573A;</td></tr>
+        <tr><td>Black Dragon Pool</td><td class="chinese">&#x9ED1;&#x9F99;&#x6F6D;</td></tr>
+        <tr><td>Lijiang Train Station</td><td class="chinese">&#x4E3D;&#x6C5F;&#x7AD9;</td></tr>
+        <tr><td>Shangri-La Train Station</td><td class="chinese">&#x9999;&#x683C;&#x91CC;&#x62C9;&#x7AD9;</td></tr>
+        <tr><td>Left / Right / Stop here</td><td class="chinese">&#x5DE6; / &#x53F3; / &#x505C;&#x8FD9;&#x513F;</td></tr>
+      </tbody>
+    </table>
+  </div>
+  </div><!-- /collapsible: Chinese Phrases -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- APPS & CONNECTIVITY                        -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header" id="apps-section" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <h2>&#x1F4F1; Apps &amp; Connectivity</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <p style="color:rgba(255,255,255,0.5);font-size:15px;margin-bottom:20px;"><strong style="color:#f87171;">DO ALL OF THIS BEFORE LEAVING THAILAND!</strong> You cannot download most of these apps once inside China.</p>
+
+  <div class="app-card">
+    <h4>&#x1F4AC; 1. WeChat (&#x5FAE;&#x4FE1;) &mdash; Messaging + Payments</h4>
+    <ol>
+      <li>Download from App Store / Google Play</li>
+      <li>Register with Thai phone number</li>
+      <li>Complete real-name verification with passport</li>
+      <li>Link Visa/Mastercard: <strong>Me &#x2192; Services &#x2192; Wallet &#x2192; Cards &#x2192; Add Card</strong></li>
+      <li>Create trip group chat with all members</li>
+    </ol>
+    <p>&#x1F4A1; <strong>Primary communication app in China.</strong> LINE/WhatsApp won't work without VPN!</p>
+  </div>
+
+  <div class="app-card">
+    <h4>&#x1F4B3; 2. Alipay (&#x652F;&#x4ED8;&#x5B9D;) &mdash; Payments (Tourist-Friendly)</h4>
+    <ol>
+      <li>Download from App Store / Google Play</li>
+      <li>Select "International Version" on first launch</li>
+      <li>Register with Thai phone number</li>
+      <li>Upload passport photo + selfie for verification</li>
+      <li>Link Visa/Mastercard via Tour Pass</li>
+    </ol>
+    <p>&#x2B50; <strong>Recommended as primary payment.</strong> Better international interface than WeChat Pay. Free under 200 CNY, 3% fee over 200 CNY.</p>
+  </div>
+
+  <div class="app-card">
+    <h4>&#x1F695; 3. Didi (&#x6EF4;&#x6EF4;&#x51FA;&#x884C;) &mdash; Taxi/Ride-Hailing</h4>
+    <ol>
+      <li>Download "DiDi Chuxing" (NOT "DiDi Rider" international version)</li>
+      <li>Register with Thai phone number (need roaming for SMS code)</li>
+      <li>Switch to English: <strong>Me &#x2192; Settings &#x2192; Language &#x2192; English</strong></li>
+      <li>Link payment via Alipay (most reliable method)</li>
+    </ol>
+    <p>&#x1F4A1; Drivers speak zero English. Show destination in Chinese characters on phone!</p>
+  </div>
+
+  <div class="app-card">
+    <h4>&#x1F5FA;&#xFE0F; 4. Amap / Gaode Maps (&#x9AD8;&#x5FB7;&#x5730;&#x56FE;) &mdash; Navigation</h4>
+    <ol>
+      <li>Search "Amap" in App Store / Google Play</li>
+      <li>English version available (launched Jan 2025)</li>
+      <li>Download offline maps: switch to Chinese &#x2192; Me &#x2192; Offline Maps &#x2192; select Lijiang, Shangri-La, Diqing/Deqin &#x2192; switch back to English</li>
+    </ol>
+    <p>&#x26A0;&#xFE0F; <strong>Google Maps is UNRELIABLE in China</strong> &mdash; roads are offset, businesses missing. Use Amap instead!</p>
+  </div>
+
+  <div class="app-card">
+    <h4>&#x1F682; 5. Trip.com &mdash; Train Tickets</h4>
+    <ol>
+      <li>Download Trip.com app</li>
+      <li>Book Day 7 train: Shangri-La &#x2192; Lijiang (1h 10min, ~56-70 CNY 2nd class)</li>
+      <li>Need passport number to book &mdash; book 3-5 days ahead</li>
+      <li>Use passport to enter station and board</li>
+    </ol>
+  </div>
+
+  <div class="app-card">
+    <h4>&#x1F310; 6. Google Translate &mdash; Offline Translation</h4>
+    <ol>
+      <li>Download the app</li>
+      <li><strong>Download offline Chinese language pack</strong> (50-150MB)</li>
+      <li>Camera translation works offline &mdash; point at menus and signs!</li>
+    </ol>
+    <p>&#x1F4A1; Needs VPN for online features in China, but offline mode works without VPN.</p>
+  </div>
+
+  <h3 style="font-family:'Kanit',sans-serif;font-size:18px;font-weight:600;color:#fbbf24;margin:32px 0 16px;">&#x1F4B3; Payment Quick Reference</h3>
+
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-num">&#x2705;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#34d399;">Accepts Visa/MC</div>
+        <div class="tip-text">LUX* Tea Horse Road, Pullman Lijiang Resort, some higher-end restaurants, train ticket machines</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">&#x274C;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#f87171;">Cash or Mobile Pay Only</div>
+        <div class="tip-text">Street food, local restaurants, market vendors, souvenir stalls, scenic spot ticket offices, convenience stores, Didi (unless via app payment)</div>
+      </div>
+    </div>
+  </div>
+  </div><!-- /collapsible: Apps & Connectivity -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- SHOPPING & SOUVENIRS                       -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <h2>&#x1F6CD;&#xFE0F; Shopping &amp; Souvenirs</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-num">&#x1F3EF;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#f472b6;">Lijiang Old Town</div>
+        <div class="tip-text"><strong>Pu'er tea</strong> (&#x666E;&#x6D31;&#x8336;) &mdash; taste before buying. <strong>Naxi handicrafts</strong> &mdash; embroidery, wood carvings. <strong>Dried flowers</strong> (Yunnan roses). <strong>Yunnan coffee beans</strong> (China's coffee region!). Dongba script artwork.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">&#x1F6D5;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#f472b6;">Shangri-La Dukezong</div>
+        <div class="tip-text"><strong>Tibetan prayer beads</strong> (mala). <strong>Yak wool scarves</strong>. <strong>Tibetan incense</strong>. Thangka paintings ($50-500+). <strong>Prayer flags</strong>. Tibetan silver jewelry.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">&#x26A0;&#xFE0F;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#f87171;">Beware Tourist Traps</div>
+        <div class="tip-text">"Pure silver" that's nickel alloy (real silver = stamped 925/999). "Jade" that's glass/resin. "Handmade" items in 20 identical shops = factory-made. <strong>Bargain:</strong> Start at 30-50% of asking, settle around 60-70%.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">&#x1F381;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#34d399;">Best Gifts to Bring Home</div>
+        <div class="tip-text"><strong>Pu'er tea cakes</strong> (compact, great gifts). <strong>Dried wild mushrooms</strong> (check customs rules). <strong>Yunnan coffee</strong>. Small Tibetan handicrafts. Tax refund available for purchases over 200 CNY!</div>
+      </div>
+    </div>
+  </div>
+
+  <p style="margin-top:14px;color:rgba(255,255,255,0.4);font-size:13px;">&#x1F4A1; Bargaining phrase: &#x592A;&#x8D35;&#x4E86;&#xFF0C;&#x4FBF;&#x5B9C;&#x4E00;&#x70B9; (t&agrave;i gu&igrave; le, pi&aacute;nyi y&igrave;di&#x1CE;n) = "Too expensive, a little cheaper!"</p>
+  </div><!-- /collapsible: Shopping -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- COMING HOME                                -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <h2>&#x1F3E0; Coming Home</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="lists-grid">
+    <div class="list-box">
+      <h3>&#x1F9F3; Departure Checklist</h3>
+      <ul>
+        <li>All belongings packed? Check under beds, bathroom, safe</li>
+        <li>Passport &amp; boarding documents ready</li>
+        <li>Settle any hotel charges</li>
+        <li>Arrive airport 2.5-3 hours early (international)</li>
+        <li>Check-in at counter (no online check-in for Ruili)</li>
+        <li>Checked bag max 23 kg, carry-on max 10 kg</li>
+      </ul>
+    </div>
+    <div class="list-box">
+      <h3>&#x1F4B0; Leftover CNY</h3>
+      <ul>
+        <li>Spend at Lijiang airport shops (Pu'er tea, Yunnan snacks)</li>
+        <li>Exchange back at SuperRich in Bangkok</li>
+        <li>Or keep for future China trips (stable currency)</li>
+      </ul>
+    </div>
+    <div class="list-box">
+      <h3>&#x1F6C3; Customs &amp; Duty</h3>
+      <ul>
+        <li>Thailand allows up to 20,000 THB value duty-free</li>
+        <li>200 cigarettes or 250g tobacco</li>
+        <li>1 liter of alcohol</li>
+        <li>Tax refund: Check for e-tax kiosk at Lijiang airport</li>
+        <li>No COVID requirements for Thai nationals returning</li>
+      </ul>
+    </div>
+  </div>
+  </div><!-- /collapsible: Coming Home -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- TRIP STATS                                 -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <h2>&#x1F4CA; Trip Stats</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-icon">&#x1F6E3;&#xFE0F;</div>
+      <div class="stat-value">~1,200</div>
+      <div class="stat-label">km traveled</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">&#x26F0;&#xFE0F;</div>
+      <div class="stat-value">4,506m</div>
+      <div class="stat-label">highest point</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">&#x1F3D4;&#xFE0F;</div>
+      <div class="stat-value">2,000m</div>
+      <div class="stat-label">lowest point</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">&#x1F3EF;</div>
+      <div class="stat-value">4</div>
+      <div class="stat-label">ancient towns</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">&#x1F699;</div>
+      <div class="stat-value">~15h</div>
+      <div class="stat-label">driving</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">&#x1F682;</div>
+      <div class="stat-value">1h 10m</div>
+      <div class="stat-label">train ride</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">&#x2708;&#xFE0F;</div>
+      <div class="stat-value">2</div>
+      <div class="stat-label">flights</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">&#x1F3E8;</div>
+      <div class="stat-value">5</div>
+      <div class="stat-label">hotels</div>
+    </div>
+  </div>
+  </div><!-- /collapsible: Trip Stats -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- PHOTOGRAPHY TIPS                           -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <h2>&#x1F4F7; Photography Tips</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-num">&#x1F303;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#fb7185;">Black Dragon Pool</div>
+        <div class="tip-text">Early morning <strong>07:00-08:00</strong> for mirror reflection of Jade Dragon Mountain. Face north/northwest.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">&#x1F4A7;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#fb7185;">Blue Moon Valley</div>
+        <div class="tip-text">Late morning <strong>10:00-12:00</strong> when sun hits the water — turquoise color pops brightest.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">&#x1F3DB;&#xFE0F;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#fb7185;">Songzanlin Monastery</div>
+        <div class="tip-text">Morning <strong>09:00-10:00</strong> — sun illuminates golden rooftops from the east. <strong>No photos inside chapels!</strong></div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">&#x1F305;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#fb7185;">Meili Sunrise (Day 6)</div>
+        <div class="tip-text">Sunrise ~<strong>06:50-07:10</strong> in early March. Be ready by 06:40. Golden light lasts ~20 minutes. NOT guaranteed (~30% visible rate).</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">&#x1F6D5;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#fb7185;">Prayer Wheel</div>
+        <div class="tip-text">Late afternoon golden hour <strong>~17:00-18:00</strong> for warm light on the wheel and panoramic views.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">&#x2744;&#xFE0F;</div>
+      <div class="tip-content">
+        <div class="tip-title" style="color:#f87171;">Cold Weather Camera Tips</div>
+        <div class="tip-text"><strong>Phone dies in -10&#xB0;C!</strong> Keep in inner jacket pocket. Camera batteries lose charge 3x faster &mdash; keep 2 spares warm inside jacket. <strong>Condensation:</strong> Put camera in ziplock bag BEFORE entering warm spaces. Hand warmers double as battery warmers!</div>
+      </div>
+    </div>
+  </div>
+  </div><!-- /collapsible: Photography Tips -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- WEATHER CONTINGENCY                        -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="collapse-chevron">&#x25BC;</span>
+    <h2>&#x1F327;&#xFE0F; Weather Backup Plans</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="collapsible-content">
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-num">D2</div>
+      <div class="tip-content">
+        <div class="tip-title">Jade Dragon Rain/Bad Weather</div>
+        <div class="tip-text">Cable car <strong>closes in severe weather</strong>. Backup: Blue Moon Valley (lower, accessible in rain), Lijiang Old Town exploration, Impression Lijiang show.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">D6</div>
+      <div class="tip-content">
+        <div class="tip-title">Meili Sunrise Cloudy</div>
+        <div class="tip-text">Golden sunrise is <strong>NOT guaranteed (~30% visible rate)</strong>. If cloudy, enjoy the dramatic cloud formations instead — still stunning views even without golden light.</div>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">&#x2600;&#xFE0F;</div>
+      <div class="tip-content">
+        <div class="tip-title">March Weather Overview</div>
+        <div class="tip-text">Early March = <strong>end of dry season</strong> — generally clear and dry in Yunnan. Rain is uncommon but possible. Pack a lightweight rain jacket just in case.</div>
+      </div>
+    </div>
+  </div>
+  </div><!-- /collapsible: Weather Backup Plans -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- EMERGENCY QUICK REFERENCE                  -->
+  <!-- ══════════════════════════════════════════ -->
+  <div class="emergency-card" style="margin-top:32px; margin-bottom:40px;">
+    <h3>&#x26A0;&#xFE0F; Emergency Quick Reference</h3>
+    <div class="e-row">
+      <span class="e-item">&#x1F6A8; Police: <strong>110</strong></span>
+      <span class="e-item">&#x1F691; Ambulance: <strong>120</strong></span>
+      <span class="e-item">&#x1F692; Fire: <strong>119</strong></span>
+      <span class="e-item">&#x1F697; Traffic: <strong>122</strong></span>
+    </div>
+    <div class="e-row" style="margin-top:8px;">
+      <span class="e-item">&#x1F1F9;&#x1F1ED; Thai Consulate (Kunming) Emergency: <strong>155 8700 3732</strong> (24/7)</span>
+    </div>
+    <div class="e-row" style="margin-top:8px;">
+      <span class="e-item">&#x1F4AC; "I have altitude sickness" = <strong>&#x6211;&#x6709;&#x9AD8;&#x539F;&#x53CD;&#x5E94;</strong></span>
+      <span class="e-item">&#x1F4AC; "Help!" = <strong>&#x6551;&#x547D;!</strong></span>
+      <span class="e-item">&#x1F4AC; "Hospital" = <strong>&#x533B;&#x9662;</strong></span>
+    </div>
+  </div>
+
+</div><!-- /content -->
+
+<!-- ════════════════════════════════════════════ -->
+<!-- ROUTE OVERVIEW                              -->
+<!-- ════════════════════════════════════════════ -->
+<div class="route-bar">
+  <h4>Route Overview</h4>
+  <div class="route-flow">
+    <span class="route-stop">&#x2708; Bangkok</span>
+    <span class="route-arrow">&rarr;</span>
+    <span class="route-stop">&#x1F3EF; Lijiang</span>
+    <span class="route-arrow">&rarr;</span>
+    <span class="route-stop">&#x1F3D4; Jade Dragon Mtn</span>
+    <span class="route-arrow">&rarr;</span>
+    <span class="route-stop">&#x1F30A; Tiger Leaping Gorge</span>
+    <span class="route-arrow">&rarr;</span>
+    <span class="route-stop">&#x1F6D5; Shangri-La</span>
+    <span class="route-arrow">&rarr;</span>
+    <span class="route-stop">&#x1F3D4; Deqin / Feilai Si</span>
+    <span class="route-arrow">&rarr;</span>
+    <span class="route-stop">&#x1F3E8; Benzilan (LUX*)</span>
+    <span class="route-arrow">&rarr;</span>
+    <span class="route-stop">&#x1F3EF; Lijiang</span>
+    <span class="route-arrow">&rarr;</span>
+    <span class="route-stop">&#x2708; Bangkok</span>
+  </div>
+</div>
+
+<!-- ── COLLAPSE ALL / EXPAND ALL BUTTON ── -->
+<button class="collapse-toggle" id="collapseToggle" onclick="toggleAll()">&#x25BC; Expand All</button>
+
+<div class="footer">
+  <div class="vibe">ADVENTURE AWAITS</div>
+  Lijiang &middot; Shangri-La &middot; Deqin &mdash; 8D7N Trip Plan &middot; Feb 28 - Mar 7, 2026
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- LIGHTBOX                                   -->
+<!-- ══════════════════════════════════════════ -->
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img" src="" alt="" />
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
+<script>
+(function() {
+  const overlay = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightbox-img');
+  const lbCaption = document.getElementById('lightbox-caption');
+
+  // Make all photo-strip and card-photo images clickable
+  document.querySelectorAll('.photo-strip img, .card-photo').forEach(function(img) {
+    img.addEventListener('click', function(e) {
+      e.stopPropagation();
+      // Use high-res version (w=1920)
+      var src = img.src.replace(/w=\d+/, 'w=1920').replace(/q=\d+/, 'q=90');
+      lbImg.src = src;
+      lbCaption.textContent = img.alt || '';
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  // Close on overlay click
+  window.closeLightbox = function() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+    lbImg.src = '';
+  };
+
+  // Close on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+})();
+</script>
+
+<!-- ── COLLAPSE / EXPAND ACCORDION SCRIPT ── -->
+<script>
+(function() {
+  // Add click-me hints to all clickable headers
+  document.querySelectorAll('.section-header[onclick], .day-header[onclick]').forEach(function(header) {
+    var hint = document.createElement('span');
+    hint.className = 'click-hint';
+    hint.innerHTML = '\uD83D\uDC46 tap to open';
+    // Insert before the last span (section-line or day-line)
+    var line = header.querySelector('.section-line, .day-line');
+    if (line) header.insertBefore(hint, line);
+    else header.appendChild(hint);
+  });
+
+  // Initialize: measure all collapsible content heights then collapse all
+  var allCollapsibles = document.querySelectorAll('.collapsible-content');
+  var allHeaders = document.querySelectorAll('.section-header[onclick], .day-header[onclick]');
+  allCollapsibles.forEach(function(el) {
+    el.style.maxHeight = el.scrollHeight + 'px';
+  });
+  // Start all sections collapsed
+  requestAnimationFrame(function() {
+    allCollapsibles.forEach(function(content) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+      content.offsetHeight;
+      content.classList.add('collapsed');
+      content.style.maxHeight = '0px';
+    });
+    allHeaders.forEach(function(header) {
+      header.classList.add('collapsed-header');
+      var chevron = header.querySelector('.collapse-chevron');
+      if (chevron) {
+        chevron.classList.add('collapsed');
+        chevron.innerHTML = '\u25B6';
+      }
+      // Update hint text
+      var hint = header.querySelector('.click-hint');
+      if (hint) hint.innerHTML = '\uD83D\uDC46 tap to open';
+    });
+    updateToggleButton();
+  });
+
+  // Re-measure on window resize (responsive)
+  var resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      allCollapsibles.forEach(function(el) {
+        if (!el.classList.contains('collapsed')) {
+          el.style.maxHeight = el.scrollHeight + 'px';
+        }
+      });
+    }, 250);
+  });
+
+  // Toggle a single section
+  window.toggleSection = function(header) {
+    var content = header.nextElementSibling;
+    while (content && !content.classList.contains('collapsible-content')) {
+      content = content.nextElementSibling;
+    }
+    if (!content) return;
+
+    var chevron = header.querySelector('.collapse-chevron');
+    var isCollapsed = content.classList.contains('collapsed');
+
+    var hint = header.querySelector('.click-hint');
+    if (isCollapsed) {
+      // Expand
+      content.classList.remove('collapsed');
+      content.style.maxHeight = content.scrollHeight + 'px';
+      header.classList.remove('collapsed-header');
+      if (chevron) {
+        chevron.classList.remove('collapsed');
+        chevron.innerHTML = '\u25BC';
+      }
+      if (hint) hint.innerHTML = '\uD83D\uDC46 tap to close';
+    } else {
+      // Collapse
+      // First set explicit max-height from current scrollHeight
+      content.style.maxHeight = content.scrollHeight + 'px';
+      // Force reflow
+      content.offsetHeight;
+      content.classList.add('collapsed');
+      content.style.maxHeight = '0px';
+      header.classList.add('collapsed-header');
+      if (chevron) {
+        chevron.classList.add('collapsed');
+        chevron.innerHTML = '\u25B6';
+      }
+      if (hint) hint.innerHTML = '\uD83D\uDC46 tap to open';
+    }
+
+    updateToggleButton();
+  };
+
+  // Toggle all sections
+  window.toggleAll = function() {
+    var contents = document.querySelectorAll('.collapsible-content');
+    var headers = document.querySelectorAll('.section-header[onclick], .day-header[onclick]');
+    var anyExpanded = false;
+
+    contents.forEach(function(c) {
+      if (!c.classList.contains('collapsed')) anyExpanded = true;
+    });
+
+    if (anyExpanded) {
+      // Collapse all
+      contents.forEach(function(content) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        content.offsetHeight;
+        content.classList.add('collapsed');
+        content.style.maxHeight = '0px';
+      });
+      headers.forEach(function(header) {
+        header.classList.add('collapsed-header');
+        var chevron = header.querySelector('.collapse-chevron');
+        if (chevron) {
+          chevron.classList.add('collapsed');
+          chevron.innerHTML = '\u25B6';
+        }
+        var hint = header.querySelector('.click-hint');
+        if (hint) hint.innerHTML = '\uD83D\uDC46 tap to open';
+      });
+    } else {
+      // Expand all
+      contents.forEach(function(content) {
+        content.classList.remove('collapsed');
+        content.style.maxHeight = content.scrollHeight + 'px';
+      });
+      headers.forEach(function(header) {
+        header.classList.remove('collapsed-header');
+        var chevron = header.querySelector('.collapse-chevron');
+        if (chevron) {
+          chevron.classList.remove('collapsed');
+          chevron.innerHTML = '\u25BC';
+        }
+        var hint = header.querySelector('.click-hint');
+        if (hint) hint.innerHTML = '\uD83D\uDC46 tap to close';
+      });
+    }
+
+    updateToggleButton();
+  };
+
+  function updateToggleButton() {
+    var btn = document.getElementById('collapseToggle');
+    if (!btn) return;
+    var contents = document.querySelectorAll('.collapsible-content');
+    var anyExpanded = false;
+    contents.forEach(function(c) {
+      if (!c.classList.contains('collapsed')) anyExpanded = true;
+    });
+    btn.innerHTML = anyExpanded ? '\u25B2 Collapse All' : '\u25BC Expand All';
+  }
+
+  // After images load, re-measure heights
+  window.addEventListener('load', function() {
+    allCollapsibles.forEach(function(el) {
+      if (!el.classList.contains('collapsed')) {
+        el.style.maxHeight = el.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // Also re-measure after a short delay (for slow-loading content)
+  setTimeout(function() {
+    allCollapsibles.forEach(function(el) {
+      if (!el.classList.contains('collapsed')) {
+        el.style.maxHeight = el.scrollHeight + 'px';
+      }
+    });
+  }, 2000);
+})();
+</script>
+
+</body>
+</html>
