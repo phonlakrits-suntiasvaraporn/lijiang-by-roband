@@ -501,6 +501,29 @@
     transform: translateY(-1px);
   }
 
+  .map-link-amap {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    margin-left: 8px;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #34d399;
+    background: rgba(52,211,153,0.08);
+    border: 1px solid rgba(52,211,153,0.2);
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .map-link-amap:hover {
+    background: rgba(52,211,153,0.15);
+    border-color: rgba(52,211,153,0.4);
+    transform: translateY(-1px);
+  }
+
   /* ── RESTAURANT SUGGESTION BOX ── */
   .restaurant-grid {
     display: grid;
@@ -838,7 +861,8 @@
   }
 
   .place-links .map-link,
-  .place-links .map-link-baidu {
+  .place-links .map-link-baidu,
+  .place-links .map-link-amap {
     margin-top: 0;
     margin-left: 0;
     font-size: 11px;
@@ -881,7 +905,7 @@
     .weather-grid { grid-template-columns: 1fr; }
     .tips-grid { grid-template-columns: 1fr; }
     .places-grid { grid-template-columns: repeat(2, 1fr); }
-    .map-link, .map-link-baidu { font-size: 12px; padding: 5px 12px; }
+    .map-link, .map-link-baidu, .map-link-amap { font-size: 12px; padding: 5px 12px; }
   }
 
   /* ── LIGHTBOX ── */
@@ -1618,6 +1642,8 @@
     <span class="hotel-icon">&#x1F3E8;</span>
     <span class="hotel-name">Nayun Natural Aesthetic</span>
     <span class="hotel-zone">Lijiang Old Town East Gate &mdash; Shuttle to door</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=Nayun+Natural+Aesthetic+Hotel+Lijiang" target="_blank" rel="noopener" class="map-link" style="margin-left:auto;font-size:12px;">&#x1F4CD; Hotel Map</a>
+    <a href="https://uri.amap.com/search?keyword=%E7%BA%B3%E4%BA%91%E8%87%AA%E7%84%B6%E7%BE%8E%E5%AD%A6%E9%85%92%E5%BA%97%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap" style="font-size:12px;">&#x1F5FA; Amap</a>
   </div>
 
   <div class="gear-box">
@@ -1649,6 +1675,8 @@
         <div class="card-desc">
           Direct flight via <strong>Ruili Airlines</strong> from Bangkok. Welcome to Yunnan! Altitude here is <strong>2,400m</strong> &mdash; take it easy from the start. Collect luggage and head to hotel shuttle.
         </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Lijiang+Sanyi+International+Airport" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Airport Map</a>
+        <a href="https://uri.amap.com/search?keyword=%E4%B8%BD%E6%B1%9F%E4%B8%89%E4%B9%89%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <div class="card-tags">
           <span class="tag tag-flight">Direct Flight</span>
           <span class="tag tag-place">Lijiang Airport</span>
@@ -1666,6 +1694,8 @@
         <div class="card-desc">
           Check-in at <strong>Nayun Natural Aesthetic</strong> near Lijiang Old Town East Gate. Hotel has shuttle service right to the door. Drop bags, then head out for a simple dinner nearby.
         </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Nayun+Natural+Aesthetic+Hotel+Lijiang" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Hotel Map</a>
+        <a href="https://uri.amap.com/search?keyword=%E7%BA%B3%E4%BA%91%E8%87%AA%E7%84%B6%E7%BE%8E%E5%AD%A6%E9%85%92%E5%BA%97%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <div class="card-tags">
           <span class="tag tag-stay">Check-in</span>
         </div>
@@ -1726,6 +1756,8 @@
     <span class="hotel-icon">&#x1F3E8;</span>
     <span class="hotel-name">Nayun Natural Aesthetic</span>
     <span class="hotel-zone">Lijiang Old Town East Gate (same hotel)</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=Nayun+Natural+Aesthetic+Hotel+Lijiang" target="_blank" rel="noopener" class="map-link" style="margin-left:auto;font-size:12px;">&#x1F4CD; Hotel Map</a>
+    <a href="https://uri.amap.com/search?keyword=%E7%BA%B3%E4%BA%91%E8%87%AA%E7%84%B6%E7%BE%8E%E5%AD%A6%E9%85%92%E5%BA%97%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap" style="font-size:12px;">&#x1F5FA; Amap</a>
   </div>
 
   <div class="gear-box">
@@ -1783,6 +1815,7 @@
           The <strong>Big Cable Car</strong> takes you from 3,356m up to <strong>4,506m in just 15 minutes!</strong> This is the highest point of the entire trip. Your ears will pop. Take canned oxygen if you feel dizzy. The views from the cable car are absolutely breathtaking.
         </div>
         <a href="https://www.google.com/maps/search/?api=1&query=Jade+Dragon+Snow+Mountain+Glacier+Park" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E7%8E%89%E9%BE%99%E9%9B%AA%E5%B1%B1%E5%86%B0%E5%B7%9D%E5%85%AC%E5%9B%AD" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <a href="https://map.baidu.com/search/?querytype=s&wd=%E7%8E%89%E9%BE%99%E9%9B%AA%E5%B1%B1%E5%86%B0%E5%B7%9D%E5%85%AC%E5%9B%AD" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
         <div class="card-tags">
           <span class="tag tag-activity">Cable Car</span>
@@ -1839,6 +1872,7 @@
           Absolutely <strong>stunning turquoise blue water</strong> against the backdrop of Jade Dragon Snow Mountain. The color comes from mineral deposits in the glacial meltwater. One of the most photographed spots in Yunnan. Take your time here &mdash; it's magical.
         </div>
         <a href="https://www.google.com/maps/search/?api=1&query=Blue+Moon+Valley+Lijiang" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E8%93%9D%E6%9C%88%E8%B0%B7%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <a href="https://map.baidu.com/search/?querytype=s&wd=%E8%93%9D%E6%9C%88%E8%B0%B7+%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
         <div class="card-tags">
           <span class="tag tag-place">Must-See</span>
@@ -1876,8 +1910,10 @@
           Take a <strong>Didi</strong> to <strong>Black Dragon Pool</strong> &mdash; the iconic viewpoint with Jade Dragon Snow Mountain reflected in the water. Then walk back through <strong>Lijiang Old Town</strong>, browse the shops, soak in the atmosphere. The old town is beautiful at night with lanterns lit up.
         </div>
         <a href="https://www.google.com/maps/search/?api=1&query=Black+Dragon+Pool+Lijiang" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Black Dragon Pool</a>
+        <a href="https://uri.amap.com/search?keyword=%E9%BB%91%E9%BE%99%E6%BD%AD%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         &nbsp;
         <a href="https://www.google.com/maps/search/?api=1&query=Lijiang+Old+Town" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Lijiang Old Town</a>
+        <a href="https://uri.amap.com/search?keyword=%E4%B8%BD%E6%B1%9F%E5%8F%A4%E5%9F%8E" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <div class="card-tags">
           <span class="tag tag-place">Iconic View</span>
           <span class="tag tag-activity">Evening Walk</span>
@@ -1905,6 +1941,8 @@
     <span class="hotel-icon">&#x1F3E8;</span>
     <span class="hotel-name">Bandu Oxygen Supply Homestay</span>
     <span class="hotel-zone">Shangri-La, Dukezong Old Town &mdash; Call staff to help carry luggage</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=Bandu+Oxygen+Supply+Homestay+Shangri-La" target="_blank" rel="noopener" class="map-link" style="margin-left:auto;font-size:12px;">&#x1F4CD; Hotel Map</a>
+    <a href="https://uri.amap.com/search?keyword=%E5%8D%8A%E5%BA%A6%E6%B0%A7%E5%B1%85%E6%B0%91%E5%AE%BF%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap" style="font-size:12px;">&#x1F5FA; Amap</a>
   </div>
 
   <div class="gear-box">
@@ -1959,6 +1997,7 @@
           One of the deepest gorges in the world! Walk down the stairs to the <strong>strongest rapids point</strong> &mdash; where the Jinsha River (Upper Yangtze) crashes through a narrow gap. The legend says a tiger leaped across using a rock in the middle. <strong>Allow ~1.5 hours total</strong> for the walk down and back up. The stairs can be tiring but the views are absolutely worth it.
         </div>
         <a href="https://www.google.com/maps/search/?api=1&query=Tiger+Leaping+Gorge+Lijiang" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E8%99%8E%E8%B7%B3%E5%B3%A1" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <a href="https://map.baidu.com/search/?querytype=s&wd=%E8%99%8E%E8%B7%B3%E5%B3%A1" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
         <div class="card-tags">
           <span class="tag tag-place">World Famous</span>
@@ -2013,6 +2052,8 @@
         <div class="card-desc">
           Check-in at <strong>Bandu Oxygen Supply Homestay</strong> in Dukezong Old Town. <strong>Turn on the heater</strong> &mdash; it gets cold at night! Adjust to the 3,200m altitude. The homestay has oxygen supply if you need it. Call staff to help carry luggage through the old town streets.
         </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Bandu+Oxygen+Supply+Homestay+Shangri-La" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Hotel Map</a>
+        <a href="https://uri.amap.com/search?keyword=%E5%8D%8A%E5%BA%A6%E6%B0%A7%E5%B1%85%E6%B0%91%E5%AE%BF%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <div class="card-tags">
           <span class="tag tag-stay">Check-in</span>
           <span class="tag tag-warn">3,200m Altitude</span>
@@ -2031,6 +2072,7 @@
           Walk from the hotel to <strong>Dafo Temple</strong> &mdash; home to the world's largest prayer wheel! It's <strong>so massive that you need about 10 people</strong> to spin it together. An incredible communal experience. The sunset views from the temple hill over Dukezong Old Town are stunning.
         </div>
         <a href="https://www.google.com/maps/search/?api=1&query=Dukezong+Giant+Prayer+Wheel+Shangri-La" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E9%BE%9F%E5%B1%B1%E5%85%AC%E5%9B%AD%E8%BD%AC%E7%BB%8F%E7%AD%92%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <a href="https://map.baidu.com/search/?querytype=s&wd=%E9%BE%9F%E5%B1%B1%E5%85%AC%E5%9B%AD%E8%BD%AC%E7%BB%8F%E7%AD%92+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
         <div class="card-tags">
           <span class="tag tag-place">Giant Prayer Wheel</span>
@@ -2077,6 +2119,8 @@
     <span class="hotel-icon">&#x1F3E8;</span>
     <span class="hotel-name">Bandu Oxygen Supply Homestay</span>
     <span class="hotel-zone">Shangri-La, Dukezong Old Town (same hotel)</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=Bandu+Oxygen+Supply+Homestay+Shangri-La" target="_blank" rel="noopener" class="map-link" style="margin-left:auto;font-size:12px;">&#x1F4CD; Hotel Map</a>
+    <a href="https://uri.amap.com/search?keyword=%E5%8D%8A%E5%BA%A6%E6%B0%A7%E5%B1%85%E6%B0%91%E5%AE%BF%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap" style="font-size:12px;">&#x1F5FA; Amap</a>
   </div>
 
   <div class="gear-box">
@@ -2111,6 +2155,7 @@
           China's first national park! Walk along wooden boardwalks through <strong>pristine alpine forest and crystal-clear lakes</strong>. The trail is flat and easy &mdash; a peaceful morning immersed in nature. The misty pine forests and mirror-like lakes create an incredible <strong>pastel mood</strong> that's perfect for photos.
         </div>
         <a href="https://www.google.com/maps/search/?api=1&query=Potatso+National+Park+Shangri-La" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E6%99%AE%E8%BE%BE%E6%8E%AA%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <a href="https://map.baidu.com/search/?querytype=s&wd=%E6%99%AE%E8%BE%BE%E6%8E%AA%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
         <div class="card-tags">
           <span class="tag tag-place">National Park</span>
@@ -2148,6 +2193,7 @@
           A vast grassland lake surrounded by mountains. Watch <strong>yak herds and horses</strong> roaming freely across the meadows. Rent a <strong>Tibetan costume</strong> for your girlfriend and snap some amazing photos against the open landscape. The wind can be fierce here &mdash; that's part of the experience!
         </div>
         <a href="https://www.google.com/maps/search/?api=1&query=Napa+Lake+Shangri-La" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E7%BA%B3%E5%B8%95%E6%B5%B7%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <a href="https://map.baidu.com/search/?querytype=s&wd=%E7%BA%B3%E5%B8%95%E6%B5%B7+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
         <div class="card-tags">
           <span class="tag tag-activity">Yak Herds &amp; Horses</span>
@@ -2185,6 +2231,7 @@
           Stroll through the ancient Tibetan streets of <strong>Dukezong Old Town</strong>. Buy souvenirs &mdash; Tibetan jewelry, prayer flags, yak wool scarves. Try <strong>Tibetan yogurt</strong> from a street vendor &mdash; thick, tangy, and unique. The old town has a completely different vibe from Lijiang &mdash; more rugged, more authentic.
         </div>
         <a href="https://www.google.com/maps/search/?api=1&query=Dukezong+Old+Town+Shangri-La" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E7%8B%AC%E5%85%8B%E5%AE%97%E5%8F%A4%E5%9F%8E%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <a href="https://map.baidu.com/search/?querytype=s&wd=%E7%8B%AC%E5%85%8B%E5%AE%97%E5%8F%A4%E5%9F%8E+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
         <div class="card-tags">
           <span class="tag tag-shop">Souvenirs</span>
@@ -2213,6 +2260,8 @@
     <span class="hotel-icon">&#x1F3E8;</span>
     <span class="hotel-name">Guanjing Tiantang Hotel</span>
     <span class="hotel-zone">Feilai Si &mdash; Room with Meili Snow Mountain View</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=Guanjing+Tiantang+Hotel+Feilai+Si+Deqin" target="_blank" rel="noopener" class="map-link" style="margin-left:auto;font-size:12px;">&#x1F4CD; Hotel Map</a>
+    <a href="https://uri.amap.com/search?keyword=%E8%A7%82%E6%99%AF%E5%A4%A9%E5%A0%82%E5%A4%A7%E9%85%92%E5%BA%97%2B%E9%A3%9E%E6%9D%A5%E5%AF%BA" target="_blank" rel="noopener" class="map-link-amap" style="font-size:12px;">&#x1F5FA; Amap</a>
   </div>
 
   <div class="gear-box">
@@ -2247,6 +2296,7 @@
           The <strong>"Little Potala Palace"</strong> &mdash; the biggest Tibetan Buddhist monastery in Yunnan! Built in 1679, it houses over 700 monks. Climb the <strong>146 steps</strong> to the main prayer hall for incredible Tibetan Buddhist art, thangka paintings, and golden statues. The golden rooftops gleaming against the blue sky is unforgettable.
         </div>
         <a href="https://www.google.com/maps/search/?api=1&query=Songzanlin+Monastery+Shangri-La" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E6%9D%BE%E8%B5%9E%E6%9E%97%E5%AF%BA%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <a href="https://map.baidu.com/search/?querytype=s&wd=%E6%9D%BE%E8%B5%9E%E6%9E%97%E5%AF%BA+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
         <div class="card-tags">
           <span class="tag tag-place">Little Potala</span>
@@ -2284,6 +2334,7 @@
           Stop at the famous <strong>Great Bend of the Jinsha River</strong> &mdash; a dramatic horseshoe turn where the river makes an incredible omega shape. An unbeatable photo opportunity from the viewpoint above.
         </div>
         <a href="https://www.google.com/maps/search/?api=1&query=Jinsha+River+Great+Bend+Yunnan" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E9%87%91%E6%B2%99%E6%B1%9F%E5%A4%A7%E6%8B%90%E5%BC%AF" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <a href="https://map.baidu.com/search/?querytype=s&wd=%E9%87%91%E6%B2%99%E6%B1%9F%E5%A4%A7%E6%8B%90%E5%BC%AF" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
         <div class="card-tags">
           <span class="tag tag-place">Scenic Stop</span>
@@ -2303,6 +2354,7 @@
           Cross the <strong>Baima Snow Mountain</strong> at 4,292m. Prayer flags flutter everywhere at the pass. Quick photo stop &mdash; you're driving through the clouds at this altitude! If the weather is clear, the views are mind-blowing.
         </div>
         <a href="https://www.google.com/maps/search/?api=1&query=Baima+Snow+Mountain+Pass+Yunnan" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E7%99%BD%E9%A9%AC%E9%9B%AA%E5%B1%B1%E5%9E%AD%E5%8F%A3" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <a href="https://map.baidu.com/search/?querytype=s&wd=%E7%99%BD%E9%A9%AC%E9%9B%AA%E5%B1%B1%E5%9E%AD%E5%8F%A3" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
         <div class="card-tags">
           <span class="tag tag-place">4,292m Pass</span>
@@ -2338,6 +2390,8 @@
         <div class="card-desc">
           Check-in at <strong>Guanjing Tiantang Hotel</strong> in Feilai Si. Make sure you have a <strong>mountain view room</strong> &mdash; this is what you came for! The hotel faces directly toward Meili Snow Mountain and Kawagebo Peak (6,740m, the tallest in Yunnan).
         </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Guanjing+Tiantang+Hotel+Feilai+Si+Deqin" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Hotel Map</a>
+        <a href="https://uri.amap.com/search?keyword=%E8%A7%82%E6%99%AF%E5%A4%A9%E5%A0%82%E5%A4%A7%E9%85%92%E5%BA%97%2B%E9%A3%9E%E6%9D%A5%E5%AF%BA" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <div class="card-tags">
           <span class="tag tag-stay">Mountain View Room</span>
           <span class="tag tag-place">Feilai Si</span>
@@ -2356,6 +2410,7 @@
           Sit on your room balcony with a cup of tea and simply <strong>gaze at Meili Snow Mountain</strong>. Kawagebo Peak (6,740m) stands before you &mdash; the most sacred mountain in Tibetan Buddhism in Yunnan. It has <strong>never been summited</strong>. This view is truly priceless. One of those moments you'll remember forever.
         </div>
         <a href="https://www.google.com/maps/search/?api=1&query=Feilai+Si+Meili+Snow+Mountain+Viewpoint" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Feilai Si Viewpoint</a>
+        <a href="https://uri.amap.com/search?keyword=%E9%A3%9E%E6%9D%A5%E5%AF%BA%2B%E6%A2%85%E9%87%8C%E9%9B%AA%E5%B1%B1" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <div class="card-tags">
           <span class="tag tag-place">Priceless View</span>
           <span class="tag tag-rest">Balcony Tea</span>
@@ -2384,6 +2439,8 @@
     <span class="hotel-icon">&#x1F3E8;</span>
     <span class="hotel-name">LUX* Tea Horse Road</span>
     <span class="hotel-zone">Benzilan &mdash; Luxury Retreat</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=LUX+Tea+Horse+Road+Benzilan" target="_blank" rel="noopener" class="map-link" style="margin-left:auto;font-size:12px;">&#x1F4CD; Hotel Map</a>
+    <a href="https://uri.amap.com/search?keyword=LUX%E8%8C%B6%E9%A9%AC%E5%8F%A4%E9%81%93%2B%E5%A5%94%E5%AD%90%E6%A0%8F" target="_blank" rel="noopener" class="map-link-amap" style="font-size:12px;">&#x1F5FA; Amap</a>
   </div>
 
   <div class="gear-box">
@@ -2477,6 +2534,7 @@
           If the group is up for it, visit <strong>Mingyong Glacier</strong> &mdash; a sacred glacier descending from Meili Snow Mountain. Take the battery car up, then walk the trail to see the glacier face. It's the lowest-latitude glacier of its type in China. A powerful, humbling sight.
         </div>
         <a href="https://www.google.com/maps/search/?api=1&query=Mingyong+Glacier+Deqin" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=%E6%98%8E%E6%B0%B8%E5%86%B0%E5%B7%9D%2B%E5%BE%B7%E9%92%A6" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <a href="https://map.baidu.com/search/?querytype=s&wd=%E6%98%8E%E6%B0%B8%E5%86%B0%E5%B7%9D+%E5%BE%B7%E9%92%A6" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
         <div class="card-tags">
           <span class="tag tag-activity">Optional</span>
@@ -2528,6 +2586,7 @@
           Welcome to luxury! <strong>LUX* Tea Horse Road Benzilan</strong> is a world-class resort nestled in the mountains along the ancient Tea Horse Road. After days of adventure and altitude, this is your <strong>ultimate reward</strong>. Stunning architecture, incredible views, and top-tier service.
         </div>
         <a href="https://www.google.com/maps/search/?api=1&query=LUX+Tea+Horse+Road+Benzilan" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Google Maps</a>
+        <a href="https://uri.amap.com/search?keyword=LUX%E8%8C%B6%E9%A9%AC%E5%8F%A4%E9%81%93%2B%E5%A5%94%E5%AD%90%E6%A0%8F" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <a href="https://map.baidu.com/search/?querytype=s&wd=LUX%E8%8C%B6%E9%A9%AC%E5%8F%A4%E9%81%93+%E5%A5%94%E5%AD%90%E6%A0%8F" target="_blank" rel="noopener" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu Maps</a>
         <div class="card-tags">
           <span class="tag tag-luxury">Luxury Resort</span>
@@ -2592,6 +2651,8 @@
     <span class="hotel-icon">&#x1F3E8;</span>
     <span class="hotel-name">Wyndham Villa</span>
     <span class="hotel-zone">Near Shuhe Ancient Town &mdash; Villa for farewell party!</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=Wyndham+Resort+Lijiang+Shuhe" target="_blank" rel="noopener" class="map-link" style="margin-left:auto;font-size:12px;">&#x1F4CD; Hotel Map</a>
+    <a href="https://uri.amap.com/search?keyword=%E6%B8%A9%E5%BE%B7%E5%A7%86%E9%85%92%E5%BA%97%2B%E4%B8%BD%E6%B1%9F%E6%9D%9F%E6%B2%B3" target="_blank" rel="noopener" class="map-link-amap" style="font-size:12px;">&#x1F5FA; Amap</a>
   </div>
 
   <div class="gear-box">
@@ -2640,6 +2701,8 @@
         <div class="card-desc">
           Arrive in Lijiang and check into the <strong>Wyndham Villa</strong> near Shuhe. Settle in, freshen up, and get ready for a chill evening. Switch from mountain gear to <strong>street fashion</strong>!
         </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Wyndham+Resort+Lijiang+Shuhe" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Villa Map</a>
+        <a href="https://uri.amap.com/search?keyword=%E6%B8%A9%E5%BE%B7%E5%A7%86%E9%85%92%E5%BA%97%2B%E4%B8%BD%E6%B1%9F%E6%9D%9F%E6%B2%B3" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <div class="card-tags">
           <span class="tag tag-stay">Villa Check-in</span>
         </div>
@@ -2657,7 +2720,9 @@
           Head out for a <strong>chill stroll</strong> through <strong>Lijiang Old Town</strong> (&#x4E3D;&#x6C5F;&#x53E4;&#x57CE;) or <strong>Shuhe Old Town</strong> (&#x675F;&#x6CB3;&#x53E4;&#x9547;, closer to the villa). Browse souvenir shops, buy gifts for friends and family. Sip on <strong>craft beer or Yunnan coffee</strong> at a rooftop caf&#xE9;. Pure chill vibes &mdash; 100% relaxation after the adventure.
         </div>
         <a href="https://www.google.com/maps/search/?api=1&query=Lijiang+Old+Town" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Lijiang Old Town</a>
+        <a href="https://uri.amap.com/search?keyword=%E4%B8%BD%E6%B1%9F%E5%8F%A4%E5%9F%8E" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <a href="https://www.google.com/maps/search/?api=1&query=Shuhe+Ancient+Town+Lijiang" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Shuhe Old Town</a>
+        <a href="https://uri.amap.com/search?keyword=%E6%9D%9F%E6%B2%B3%E5%8F%A4%E9%95%87%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <div class="card-tags">
           <span class="tag tag-shop">Souvenirs</span>
           <span class="tag tag-food">Craft Beer / Coffee</span>
@@ -2749,8 +2814,10 @@
           <span class="card-title">Check-out + Van to Airport</span>
         </div>
         <div class="card-desc">
-          Pack up, check-out from Pullman Lijiang. Van to Lijiang Airport &mdash; about <strong>40 minutes</strong>. Make sure you have all your belongings, souvenirs, and memories packed tight!
+          Pack up, check-out from Wyndham Villa. Van to Lijiang Airport &mdash; about <strong>40 minutes</strong>. Make sure you have all your belongings, souvenirs, and memories packed tight!
         </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Lijiang+Sanyi+International+Airport" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Airport Map</a>
+        <a href="https://uri.amap.com/search?keyword=%E4%B8%BD%E6%B1%9F%E4%B8%89%E4%B9%89%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <div class="card-tags">
           <span class="tag tag-stay">Check-out</span>
           <span class="tag tag-drive">40 min to Airport</span>
@@ -2768,6 +2835,8 @@
         <div class="card-desc">
           <strong>Ruili Airlines DR5041</strong> &mdash; Lijiang (LJG) to Suvarnabhumi (BKK). Direct flight home. One last look at the Yunnan mountains from the sky!
         </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Lijiang+Sanyi+International+Airport" target="_blank" rel="noopener" class="map-link">&#x1F4CD; Airport Map</a>
+        <a href="https://uri.amap.com/search?keyword=%E4%B8%BD%E6%B1%9F%E4%B8%89%E4%B9%89%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a>
         <div class="card-tags">
           <span class="tag tag-flight">Ruili DR5041</span>
           <span class="tag tag-flight">LJG &rarr; BKK</span>
@@ -3195,73 +3264,73 @@
         <div class="place-icon">&#x1F3EF;</div>
         <div class="place-name">Lijiang Old Town</div>
         <div class="place-detail">UNESCO Heritage, Naxi culture</div>
-        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Lijiang+Old+Town" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E4%B8%BD%E6%B1%9F%E5%8F%A4%E5%9F%8E" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a></div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Lijiang+Old+Town" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E4%B8%BD%E6%B1%9F%E5%8F%A4%E5%9F%8E" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E4%B8%BD%E6%B1%9F%E5%8F%A4%E5%9F%8E" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
       </div>
       <div class="place-card">
         <div class="place-icon">&#x1F3D4;&#xFE0F;</div>
         <div class="place-name">Jade Dragon Snow Mountain</div>
         <div class="place-detail">4,506m summit, Glacier Park</div>
-        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Jade+Dragon+Snow+Mountain+Glacier+Park" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E7%8E%89%E9%BE%99%E9%9B%AA%E5%B1%B1%E5%86%B0%E5%B7%9D%E5%85%AC%E5%9B%AD" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a></div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Jade+Dragon+Snow+Mountain+Glacier+Park" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E7%8E%89%E9%BE%99%E9%9B%AA%E5%B1%B1%E5%86%B0%E5%B7%9D%E5%85%AC%E5%9B%AD" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E7%8E%89%E9%BE%99%E9%9B%AA%E5%B1%B1%E5%86%B0%E5%B7%9D%E5%85%AC%E5%9B%AD" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
       </div>
       <div class="place-card">
         <div class="place-icon">&#x1F4A7;</div>
         <div class="place-name">Blue Moon Valley</div>
         <div class="place-detail">Turquoise glacial meltwater</div>
-        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Blue+Moon+Valley+Lijiang" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E8%93%9D%E6%9C%88%E8%B0%B7+%E4%B8%BD%E6%B1%9F" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a></div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Blue+Moon+Valley+Lijiang" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E8%93%9D%E6%9C%88%E8%B0%B7+%E4%B8%BD%E6%B1%9F" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E8%93%9D%E6%9C%88%E8%B0%B7%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
       </div>
       <div class="place-card">
         <div class="place-icon">&#x1F303;</div>
         <div class="place-name">Black Dragon Pool</div>
         <div class="place-detail">Iconic mountain reflection</div>
-        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Black+Dragon+Pool+Lijiang" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E9%BB%91%E9%BE%99%E6%BD%AD+%E4%B8%BD%E6%B1%9F" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a></div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Black+Dragon+Pool+Lijiang" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E9%BB%91%E9%BE%99%E6%BD%AD+%E4%B8%BD%E6%B1%9F" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E9%BB%91%E9%BE%99%E6%BD%AD%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
       </div>
       <div class="place-card">
         <div class="place-icon">&#x1F30A;</div>
         <div class="place-name">Tiger Leaping Gorge</div>
         <div class="place-detail">World's deepest gorge</div>
-        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Tiger+Leaping+Gorge+Lijiang" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E8%99%8E%E8%B7%B3%E5%B3%A1" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a></div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Tiger+Leaping+Gorge+Lijiang" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E8%99%8E%E8%B7%B3%E5%B3%A1" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E8%99%8E%E8%B7%B3%E5%B3%A1" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
       </div>
       <div class="place-card">
         <div class="place-icon">&#x1F3DB;&#xFE0F;</div>
         <div class="place-name">Songzanlin Monastery</div>
         <div class="place-detail">"Little Potala" of Yunnan</div>
-        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Songzanlin+Monastery+Shangri-La" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E6%9D%BE%E8%B5%9E%E6%9E%97%E5%AF%BA+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a></div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Songzanlin+Monastery+Shangri-La" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E6%9D%BE%E8%B5%9E%E6%9E%97%E5%AF%BA+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E6%9D%BE%E8%B5%9E%E6%9E%97%E5%AF%BA%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
       </div>
       <div class="place-card">
         <div class="place-icon">&#x1F40E;</div>
         <div class="place-name">Napa Lake</div>
         <div class="place-detail">Horse riding, grasslands</div>
-        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Napa+Lake+Shangri-La" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E7%BA%B3%E5%B8%95%E6%B5%B7+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a></div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Napa+Lake+Shangri-La" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E7%BA%B3%E5%B8%95%E6%B5%B7+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E7%BA%B3%E5%B8%95%E6%B5%B7%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
       </div>
       <div class="place-card">
         <div class="place-icon">&#x1F6D5;</div>
         <div class="place-name">Dukezong + Prayer Wheel</div>
         <div class="place-detail">Ancient Tibetan town, giant wheel</div>
-        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Dukezong+Old+Town+Shangri-La" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E7%8B%AC%E5%85%8B%E5%AE%97%E5%8F%A4%E5%9F%8E+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a></div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Dukezong+Old+Town+Shangri-La" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E7%8B%AC%E5%85%8B%E5%AE%97%E5%8F%A4%E5%9F%8E+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E7%8B%AC%E5%85%8B%E5%AE%97%E5%8F%A4%E5%9F%8E%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
       </div>
       <div class="place-card">
         <div class="place-icon">&#x1F305;</div>
         <div class="place-name">Feilai Si Viewpoint</div>
         <div class="place-detail">Meili Snow Mountain sunrise</div>
-        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Feilai+Si+Meili+Snow+Mountain+Viewpoint" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E9%A3%9E%E6%9D%A5%E5%AF%BA+%E6%A2%85%E9%87%8C%E9%9B%AA%E5%B1%B1" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a></div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Feilai+Si+Meili+Snow+Mountain+Viewpoint" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E9%A3%9E%E6%9D%A5%E5%AF%BA+%E6%A2%85%E9%87%8C%E9%9B%AA%E5%B1%B1" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E9%A3%9E%E6%9D%A5%E5%AF%BA%2B%E6%A2%85%E9%87%8C%E9%9B%AA%E5%B1%B1" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
       </div>
       <div class="place-card">
         <div class="place-icon">&#x1F9CA;</div>
         <div class="place-name">Mingyong Glacier</div>
         <div class="place-detail">Sacred glacier, lowest-latitude</div>
-        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Mingyong+Glacier+Deqin" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E6%98%8E%E6%B0%B8%E5%86%B0%E5%B7%9D+%E5%BE%B7%E9%92%A6" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a></div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Mingyong+Glacier+Deqin" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E6%98%8E%E6%B0%B8%E5%86%B0%E5%B7%9D+%E5%BE%B7%E9%92%A6" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E6%98%8E%E6%B0%B8%E5%86%B0%E5%B7%9D%2B%E5%BE%B7%E9%92%A6" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
       </div>
       <div class="place-card">
         <div class="place-icon">&#x1F332;</div>
         <div class="place-name">Potatso National Park</div>
         <div class="place-detail">Lake Shudu, boardwalks</div>
-        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Potatso+National+Park+Shangri-La" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E6%99%AE%E8%BE%BE%E6%8E%AA%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a></div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Potatso+National+Park+Shangri-La" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E6%99%AE%E8%BE%BE%E6%8E%AA%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD+%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E6%99%AE%E8%BE%BE%E6%8E%AA%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%2B%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
       </div>
       <div class="place-card">
         <div class="place-icon">&#x1F3E0;</div>
         <div class="place-name">Shuhe Ancient Town</div>
         <div class="place-detail">Quieter sister of Lijiang</div>
-        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Shuhe+Ancient+Town+Lijiang" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E6%9D%9F%E6%B2%B3%E5%8F%A4%E9%95%87+%E4%B8%BD%E6%B1%9F" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a></div>
+        <div class="place-links"><a href="https://www.google.com/maps/search/?api=1&query=Shuhe+Ancient+Town+Lijiang" target="_blank" class="map-link">&#x1F4CD; Google</a><a href="https://map.baidu.com/search/?querytype=s&wd=%E6%9D%9F%E6%B2%B3%E5%8F%A4%E9%95%87+%E4%B8%BD%E6%B1%9F" target="_blank" class="map-link-baidu">&#x1F1E8;&#x1F1F3; Baidu</a><a href="https://uri.amap.com/search?keyword=%E6%9D%9F%E6%B2%B3%E5%8F%A4%E9%95%87%2B%E4%B8%BD%E6%B1%9F" target="_blank" rel="noopener" class="map-link-amap">&#x1F5FA; Amap</a></div>
       </div>
     </div>
   </div>
